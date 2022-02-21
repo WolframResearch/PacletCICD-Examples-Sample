@@ -11,7 +11,7 @@ Notebook[
       CellID -> 57375933
      ],
      Cell[
-      "A complete sample Paclet",
+      "A complete sample Paclet!!!",
       "Text",
       Deletable -> False,
       CellTags -> {"Description", "TemplateCell"},
@@ -750,7 +750,7 @@ Notebook[
                CellID -> 296982604
               ]
              },
-             Closed
+             Open
             ]
            ],
            Cell[
@@ -1901,6 +1901,38 @@ Notebook[
                   "Output",
                   CellLabel -> "Out[2]=",
                   CellID -> 585314005
+                 ]
+                },
+                Open
+               ]
+              ],
+              Cell["Here's a bad example.", "Text", CellID -> 78723355],
+              Cell[
+               CellGroupData[
+                {
+                 Cell[
+                  BoxData[
+                   {
+                    RowBox[{"1", "+", "1"}],
+                    "\[IndentingNewLine]",
+                    RowBox[{"2", "+", "2"}]
+                   }
+                  ],
+                  "Input",
+                  CellLabel -> "In[14]:=",
+                  CellID -> 490312895
+                 ],
+                 Cell[
+                  BoxData["2"],
+                  "Output",
+                  CellLabel -> "Out[14]=",
+                  CellID -> 168524871
+                 ],
+                 Cell[
+                  BoxData["4"],
+                  "Output",
+                  CellLabel -> "Out[15]=",
+                  CellID -> 360686762
                  ]
                 },
                 Open
@@ -3747,7 +3779,7 @@ Notebook[
   "AutoUpdate" -> True,
   "NotebookIndexQ" -> True,
   "NotebookLastIndexed" -> DateObject[
-   {2022, 2, 21, 10, 16, 21.1085632`9.077033605002473},
+   {2022, 2, 21, 12, 8, 55.8289452`9.499434261763463},
    "Instant",
    "Gregorian",
    -5.

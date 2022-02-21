@@ -1,4 +1,4 @@
-BeginPackage["WrongPublisher`SamplePaclet`"];
+BeginPackage["MyPublisher`SamplePaclet`"];
 
 (* Declare your packages public symbols here. *)
 

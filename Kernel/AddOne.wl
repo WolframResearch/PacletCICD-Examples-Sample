@@ -10,10 +10,6 @@ Begin["`Private`"];
 
 AddOne[x_] := x + 1;
 
-If[a, b, b]
-
-<|a -> # + 1 &|>
-
 End[]; (* End `Private` *)
 
 EndPackage[];

@@ -1,0 +1,413 @@
+Notebook[
+ {
+  Cell[
+   TextData[
+    {
+     "New in: ",
+     Cell["", "HistoryData", CellTags -> "New"],
+     " | Modified in: ",
+     Cell[" ", "HistoryData", CellTags -> "Modified"],
+     " | Obsolete in: ",
+     Cell[" ", "HistoryData", CellTags -> "Obsolete"],
+     " | Excised in: ",
+     Cell[" ", "HistoryData", CellTags -> "Excised"]
+    }
+   ],
+   "History",
+   CellID -> 442953916
+  ],
+  Cell[
+   "Created by: rhennigan on 02-06-2022 15:12:13",
+   "AuthorDate",
+   CellID -> 485145089
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Categorization",
+      "CategorizationSection",
+      CellID -> 227341607
+     ],
+     Cell[
+      "Symbol",
+      "Categorization",
+      CellLabel -> "Entity Type",
+      CellID -> 102775589
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet",
+      "Categorization",
+      CellLabel -> "Paclet Name",
+      CellID -> 13203781
+     ],
+     Cell[
+      "MyPublisher`SamplePaclet`",
+      "Categorization",
+      CellLabel -> "Context",
+      CellID -> 423919477
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet/ref/AddTwo",
+      "Categorization",
+      CellLabel -> "URI",
+      CellID -> 123088812
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Keywords", "KeywordsSection", CellID -> 426345023],
+     Cell["XXXX", "Keywords", CellID -> 160805281]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Syntax Templates",
+      "TemplatesSection",
+      CellID -> 640652960
+     ],
+     Cell[
+      BoxData[""],
+      "Template",
+      CellLabel -> "Additional Function Template",
+      CellID -> 956382
+     ],
+     Cell[
+      BoxData[""],
+      "Template",
+      CellLabel -> "Arguments Pattern",
+      CellID -> 23784209
+     ],
+     Cell[
+      BoxData[""],
+      "Template",
+      CellLabel -> "Local Variables",
+      CellID -> 8091423
+     ],
+     Cell[
+      BoxData[""],
+      "Template",
+      CellLabel -> "Color Equal Signs",
+      CellID -> 356873526
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["AddTwo", "ObjectName", CellID -> 19534339],
+     Cell[
+      TextData[
+       {
+        Cell["   ", "ModInfo"],
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            ButtonBox[
+             "AddTwo",
+             BaseStyle -> "Link",
+             ButtonData -> "paclet:MyPublisher/AdvancedSamplePaclet/CompiledLibraryExamplePaclet/ref/AddTwo"
+            ],
+            "[",
+            StyleBox["x", "TI"],
+            "]"
+           }
+          ]
+         ],
+         "InlineFormula"
+        ],
+        " \[LineSeparator]adds two to ",
+        Cell[BoxData[StyleBox["x", "TI"]], "InlineFormula"],
+        "."
+       }
+      ],
+      "Usage",
+      CellID -> 105697128
+     ],
+     Cell["XXXX", "Notes", CellID -> 1421668]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Tech Notes", "TechNotesSection", CellID -> 347851740],
+     Cell["XXXX", "Tutorials", CellID -> 162451092]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Related Demonstrations",
+      "RelatedDemonstrationsSection",
+      CellID -> 45062672
+     ],
+     Cell["XXXX", "RelatedDemonstrations", CellID -> 238366849]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Related Links",
+      "RelatedLinksSection",
+      CellID -> 186783056
+     ],
+     Cell["XXXX", "RelatedLinks", CellID -> 302714530]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["See Also", "SeeAlsoSection", CellID -> 784238168],
+     Cell["XXXX", "SeeAlso", CellID -> 34451787]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Related Guides",
+      "MoreAboutSection",
+      CellID -> 506359065
+     ],
+     Cell["XXXX", "MoreAbout", CellID -> 549981261]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      BoxData[
+       InterpretationBox[
+        GridBox[
+         {
+          {
+           StyleBox["Examples", "PrimaryExamplesSection"],
+           ButtonBox[
+            RowBox[
+             {
+              RowBox[{"More", " ", "Examples"}],
+              " ",
+              "\[RightTriangle]"
+             }
+            ],
+            BaseStyle -> "ExtendedExamplesLink",
+            ButtonData :> "ExtendedExamples"
+           ]
+          }
+         }
+        ],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "PrimaryExamplesSection",
+      CellID -> 487261667
+     ],
+     Cell[
+      BoxData[
+       RowBox[
+        {"Needs", "[", "\"MyPublisher`SamplePaclet`\"", "]"}
+       ]
+      ],
+      "Input",
+      InitializationCell -> True,
+      CellLabel -> "In[1]:=",
+      CellID -> 37376475
+     ],
+     Cell[
+      "Add two to a number:",
+      "ExampleText",
+      CellID -> 680947663
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[RowBox[{"AddTwo", "[", "5", "]"}]],
+         "Input",
+         CellLabel -> "In[2]:=",
+         CellID -> 562441377
+        ],
+        Cell[
+         BoxData["7"],
+         "Output",
+         CellLabel -> "Out[2]=",
+         CellID -> 92191522
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "More Examples",
+      "ExtendedExamplesSection",
+      CellTags -> "ExtendedExamples",
+      CellID -> 58008317
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Scope", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 158239516
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Generalizations & Extensions", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 56840277
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          InterpretationBox[
+           Cell["Options", "ExampleSection"],
+           $Line = 0;
+           Null
+          ]
+         ],
+         "ExampleSection",
+         CellID -> 814023423
+        ],
+        Cell[
+         BoxData[
+          InterpretationBox[
+           Cell["XXXX", "ExampleSubsection"],
+           $Line = 0;
+           Null
+          ]
+         ],
+         "ExampleSubsection",
+         CellID -> 342729074
+        ],
+        Cell[
+         BoxData[
+          InterpretationBox[
+           Cell["XXXX", "ExampleSubsection"],
+           $Line = 0;
+           Null
+          ]
+         ],
+         "ExampleSubsection",
+         CellID -> 278729250
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Applications", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 124342531
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Properties & Relations", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 230619992
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Possible Issues", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 364240322
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Interactive Examples", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 217509762
+     ],
+     Cell[
+      BoxData[
+       InterpretationBox[
+        Cell["Neat Examples", "ExampleSection"],
+        $Line = 0;
+        Null
+       ]
+      ],
+      "ExampleSection",
+      CellID -> 62185671
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ TaggingRules -> <|
+  "Author" -> "rhennigan",
+  "CreationDate" -> "02-06-2022 15:12:13"
+ |>,
+ CellContext -> "Global`",
+ FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (February 16, 2022)",
+ StyleDefinitions -> FrontEnd`FileName[
+  {"Wolfram"},
+  "FunctionPageStylesExt.nb",
+  CharacterEncoding -> "UTF-8"
+ ],
+ ExpressionUUID -> "1baa4172-0fb3-4562-b7ba-39e87846f736"
+]

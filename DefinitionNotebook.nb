@@ -11,7 +11,7 @@ Notebook[
       CellID -> 57375933
      ],
      Cell[
-      "A complete sample Paclet",
+      "A complete sample Paclet!!!",
       "Text",
       Deletable -> False,
       CellTags -> {"Description", "TemplateCell"},
@@ -533,19 +533,19 @@ Notebook[
                         CellID -> 330713801
                        ]
                       },
-                      Closed
+                      Open
                      ]
                     ]
                    },
-                   Closed
+                   Open
                   ]
                  ]
                 },
-                Closed
+                Open
                ]
               ]
              },
-             Closed
+             Open
             ]
            ],
            Cell[
@@ -750,7 +750,7 @@ Notebook[
                CellID -> 296982604
               ]
              },
-             Closed
+             Open
             ]
            ],
            Cell[
@@ -1033,7 +1033,7 @@ Notebook[
                CellID -> 601108568
               ]
              },
-             Closed
+             Open
             ]
            ],
            Cell[
@@ -1901,6 +1901,38 @@ Notebook[
                   "Output",
                   CellLabel -> "Out[2]=",
                   CellID -> 585314005
+                 ]
+                },
+                Open
+               ]
+              ],
+              Cell["This is a bad example.", "Text", CellID -> 792882357],
+              Cell[
+               CellGroupData[
+                {
+                 Cell[
+                  BoxData[
+                   {
+                    RowBox[{"1", "+", "1"}],
+                    "\[IndentingNewLine]",
+                    RowBox[{"2", "+", "2"}]
+                   }
+                  ],
+                  "Input",
+                  CellLabel -> "In[16]:=",
+                  CellID -> 636036517
+                 ],
+                 Cell[
+                  BoxData["2"],
+                  "Output",
+                  CellLabel -> "Out[16]=",
+                  CellID -> 111967909
+                 ],
+                 Cell[
+                  BoxData["4"],
+                  "Output",
+                  CellLabel -> "Out[17]=",
+                  CellID -> 66662160
                  ]
                 },
                 Open
@@ -3747,7 +3779,7 @@ Notebook[
   "AutoUpdate" -> True,
   "NotebookIndexQ" -> True,
   "NotebookLastIndexed" -> DateObject[
-   {2022, 2, 21, 10, 16, 21.1085632`9.077033605002473},
+   {2022, 2, 22, 11, 43, 42.4485698`9.380437936947366},
    "Instant",
    "Gregorian",
    -5.

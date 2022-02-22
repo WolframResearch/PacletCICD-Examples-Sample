@@ -10,6 +10,10 @@ Begin["`Private`"];
 
 AddTwo[x_] := x + 2;
 
+If[a, b, b]
+
+<|a -> # + 1 &|>
+
 End[]; (* End `Private` *)
 
 EndPackage[];

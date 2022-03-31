@@ -1,4 +1,4 @@
-name: Check
+name: Build
 on: 
   push: 
     branches:  [main]
@@ -6,8 +6,8 @@ on:
     branches:  [main]
   workflow_dispatch:
 jobs: 
-  Check: 
-    name: Check
+  Build: 
+    name: Build
     runs-on: ubuntu-latest
     container: 
       image: wolframresearch/wolframengine:latest
@@ -21,11 +21,17 @@ jobs:
     - name: Checkout
       id: checkout-code-step
       uses: actions/checkout@v2
-    - name: Check
-      id: check-paclet-step
-      uses: rhennigan/check-paclet@latest
+    - name: Build
+      id: build-paclet-step
+      uses: rhennigan/build-paclet@latest
       with: 
         target: Submit
         paclet_cicd_version: latest
         definition_notebook: ./ResourceDefinition.nb
         resource_system_base: https://www.wolframcloud.com/obj/resourcesystem/api/1.0
+    - name: UploadArtifact
+      id: upload-build-artifacts-step
+      uses: actions/upload-artifact@v2
+      with: 
+        path: ${{ env.PACLET_BUILD_DIR }}
+        if-no-files-found: error

@@ -28,4 +28,4 @@ jobs:
         target: Submit
         paclet_cicd_version: 0.16.1
         definition_notebook: ./ResourceDefinition.nb
-        resource_system_base: https://www.wolframcloud.com/obj/resourcesystem/api/1.0
+        resource_system_base: https://www.wolframcloud.com/obj/rsdevel/api/1.0

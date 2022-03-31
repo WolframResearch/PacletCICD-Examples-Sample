@@ -1,30 +1,31 @@
-PacletObject[ <|
-    "Name"             -> "MyPublisher/SamplePaclet",
-    "Description"      -> "A complete sample Paclet",
-    "Creator"          -> "Example Author",
-    "Version"          -> "1.0.0",
-    "WolframVersion"   -> "13.0+",
-    "License"          -> "MIT",
-    "PublisherID"      -> "MyPublisher",
+(* ::Package:: *)
+
+PacletObject[
+  <|
+    "Name" -> "Bob/SamplePaclet",
+    "Description" -> "A complete sample Paclet",
+    "Creator" -> "Example Author",
     "SourceControlURL" -> "https://github.com/rhennigan/PacletCICD-Examples-Sample",
-    "Extensions"       -> {
-        {
-            "Kernel",
-            "Root"    -> "Kernel",
-            "Context" -> { "MyPublisher`SamplePaclet`" },
-            "Symbols" -> {
-                "MyPublisher`SamplePaclet`AddOne",
-                "MyPublisher`SamplePaclet`AddTwo"
-            }
-        },
-        {
-            "Documentation",
-            "Root"     -> "Documentation",
-            "Language" -> "English"
-        },
-        {
-            "Asset",
-            "Assets" -> { { "License", "./LICENSE" } }
+    "License" -> "MIT",
+    "PublisherID" -> "Bob",
+    "Version" -> "1.0.0",
+    "WolframVersion" -> "13.0+",
+    "Extensions" -> {
+      {
+        "Kernel",
+        "Root" -> "Kernel",
+        "Context" -> {"Bob`SamplePaclet`"},
+        "Symbols" -> {
+          "Bob`SamplePaclet`AddOne",
+          "Bob`SamplePaclet`AddTwo"
         }
+      },
+      {
+        "Documentation",
+        "Root" -> "Documentation",
+        "Language" -> "English"
+      },
+      {"Asset", "Assets" -> {{"License", "./LICENSE"}}}
     }
-|> ]
+  |>
+]

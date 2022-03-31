@@ -1,4 +1,6 @@
-BeginPackage["MyPublisher`SamplePaclet`"];
+(* ::Package:: *)
+
+BeginPackage["Bob`SamplePaclet`"];
 
 (* Declare your packages public symbols here. *)
 

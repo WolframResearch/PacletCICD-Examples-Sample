@@ -1,2 +1,4 @@
-<<MyPublisher`SamplePaclet`AddOne`
-<<MyPublisher`SamplePaclet`AddTwo`
+(* ::Package:: *)
+
+<<Bob`SamplePaclet`AddOne`
+<<Bob`SamplePaclet`AddTwo`

@@ -1,0 +1,266 @@
+Notebook[
+ {
+  Cell[
+   TextData[
+    {
+     "New in: ",
+     Cell["", "HistoryData", CellTags -> "New"],
+     " | Modified in: ",
+     Cell[" ", "HistoryData", CellTags -> "Modified"],
+     " | Obsolete in: ",
+     Cell[" ", "HistoryData", CellTags -> "Obsolete"],
+     " | Excised in: ",
+     Cell[" ", "HistoryData", CellTags -> "Excised"]
+    }
+   ],
+   "History",
+   CellID -> 81275805
+  ],
+  Cell[
+   "Created by: rhennigan on 04-08-2022 11:39:02",
+   "AuthorDate",
+   CellID -> 45969991
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Categorization",
+      "CategorizationSection",
+      CellID -> 780242419
+     ],
+     Cell[
+      "Guide",
+      "Categorization",
+      CellLabel -> "Entity Type",
+      CellID -> 363220203
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet",
+      "Categorization",
+      CellLabel -> "Paclet Name",
+      CellID -> 73239438
+     ],
+     Cell[
+      "MyPublisher`SamplePaclet`",
+      "Categorization",
+      CellLabel -> "Context",
+      CellID -> 356463850
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet/guide/SampleGuide",
+      "Categorization",
+      CellLabel -> "URI",
+      CellID -> 358425830
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Keywords", "KeywordsSection", CellID -> 651643062],
+     Cell["sample", "Keywords", CellID -> 128733725],
+     Cell["paclet", "Keywords", CellID -> 427034233],
+     Cell["CI/CD", "Keywords", CellID -> 334428899]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Sample Guide", "GuideTitle", CellID -> 342685780],
+     Cell[
+      "This is a basic guide page.",
+      "GuideAbstract",
+      CellID -> 832147479
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["", "GuideFunctionsSection", CellID -> 123752921],
+     Cell[
+      TextData[
+       {
+        Cell[
+         BoxData[
+          ButtonBox[
+           "AddOne",
+           BaseStyle -> "Link",
+           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+          ]
+         ],
+         "InlineGuideFunction"
+        ],
+        " \[LongDash] add one to something"
+       }
+      ],
+      "GuideText",
+      CellID -> 187236300
+     ],
+     Cell[
+      TextData[
+       {
+        Cell[
+         BoxData[
+          ButtonBox[
+           "AddTwo",
+           BaseStyle -> "Link",
+           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+          ]
+         ],
+         "InlineGuideFunction"
+        ],
+        " \[LongDash] add two to something"
+       }
+      ],
+      "GuideText",
+      CellID -> 16974419
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["\t", "GuideDelimiter", CellID -> 285454490],
+        Cell[
+         TextData[
+          {
+           Cell[
+            BoxData[
+             ButtonBox[
+              "AddOne",
+              BaseStyle -> "Link",
+              ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+             ]
+            ],
+            "InlineFormula"
+           ],
+           " \[EmptyVerySmallSquare] ",
+           Cell[
+            BoxData[
+             ButtonBox[
+              "AddTwo",
+              BaseStyle -> "Link",
+              ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+             ]
+            ],
+            "InlineFormula"
+           ]
+          }
+         ],
+         "InlineGuideFunctionListing",
+         CellID -> 254962454
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Tech Notes",
+      "GuideTutorialsSection",
+      CellID -> 75456993
+     ],
+     Cell[
+      TextData[
+       ButtonBox[
+        "Arithmetic",
+        BaseStyle -> "Link",
+        ButtonData -> "paclet:MyPublisher/SamplePaclet/tutorial/Arithmetic"
+       ]
+      ],
+      "GuideTutorial",
+      CellID -> 232893748
+     ],
+     Cell["XXXX", "GuideTutorial", CellID -> 19646819]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Related Guides",
+      "GuideMoreAboutSection",
+      CellID -> 441329109
+     ],
+     Cell["XXXX", "GuideMoreAbout", CellID -> 535695898],
+     Cell["XXXX", "GuideMoreAbout", CellID -> 211482343]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Related Links",
+      "GuideRelatedLinksSection",
+      CellID -> 41540409
+     ],
+     Cell[
+      TextData[
+       ButtonBox[
+        "https://github.com/rhennigan/PacletCICD-Examples-Sample",
+        BaseStyle -> "Hyperlink",
+        ButtonData -> {
+         URL[
+          "https://github.com/rhennigan/PacletCICD-Examples-Sample"
+         ],
+         None
+        }
+       ]
+      ],
+      "GuideRelatedLinks",
+      CellID -> 198729364
+     ],
+     Cell[
+      TextData[
+       ButtonBox[
+        "https://github.com/rhennigan/PacletCICD",
+        BaseStyle -> "Hyperlink",
+        ButtonData -> {URL["https://github.com/rhennigan/PacletCICD"], None}
+       ]
+      ],
+      "GuideRelatedLinks",
+      CellID -> 79493166
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ WindowStatusArea -> Automatic,
+ TaggingRules -> {
+  "InformationPopupMenuItemAdded" -> True,
+  "Author" -> "rhennigan",
+  "CreationDate" -> "04-08-2022 11:39:02",
+  "NotebookIndexQ" -> True,
+  "NotebookLastIndexed" -> DateObject[
+   {2022, 4, 8, 12, 45, 31.6775813`9.253326918806678},
+   "Instant",
+   "Gregorian",
+   -4.
+  ],
+  "NotebookUUID" -> "466e6f27-4930-4efa-8001-80080d608140"
+ },
+ FrontEndVersion -> "13.0 for Microsoft Windows (64-bit) (January 26, 2022)",
+ StyleDefinitions -> FrontEnd`FileName[
+  {"Wolfram"},
+  "GuidePageStylesExt.nb",
+  CharacterEncoding -> "UTF-8"
+ ],
+ ExpressionUUID -> "466e6f27-4930-4efa-8001-80080d608140"
+]

@@ -1,0 +1,709 @@
+Notebook[
+ {
+  Cell[
+   TextData[
+    {
+     "New in: ",
+     Cell["", "HistoryData", CellTags -> "New"],
+     " | Modified in: ",
+     Cell[" ", "HistoryData", CellTags -> "Modified"],
+     " | Obsolete in: ",
+     Cell[" ", "HistoryData", CellTags -> "Obsolete"],
+     " | Excised in: ",
+     Cell[" ", "HistoryData", CellTags -> "Excised"]
+    }
+   ],
+   "History",
+   CellID -> 151537145
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Categorization",
+      "CategorizationSection",
+      CellID -> 720958107
+     ],
+     Cell[
+      "Tech Note",
+      "Categorization",
+      CellLabel -> "Entity Type",
+      CellID -> 634641903
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet",
+      "Categorization",
+      CellLabel -> "Paclet Name",
+      CellID -> 162634724
+     ],
+     Cell[
+      "MyPublisher`SamplePaclet`",
+      "Categorization",
+      CellLabel -> "Context",
+      CellID -> 107266034
+     ],
+     Cell[
+      "MyPublisher/SamplePaclet/tutorial/Arithmetic",
+      "Categorization",
+      CellLabel -> "URI",
+      CellID -> 323052657
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Keywords", "KeywordsSection", CellID -> 312834638],
+     Cell["XXXX", "Keywords", CellID -> 89160598]
+    },
+    Closed
+   ]
+  ],
+  Cell[
+   CellGroupData[
+    {
+     Cell["Arithmetic", "Title", CellID -> 230029336],
+     Cell[
+      "Arithmetic is hard. This tutorial does not address that in any way. If anything, this will make it harder. MyPublisher/SamplePaclet gives you all the functions you need to do harder-than-necessary arithmetic.",
+      "Text",
+      CellID -> 3438887
+     ],
+     Cell[
+      BoxData[
+       GridBox[
+        {
+         {
+          ButtonBox[
+           "AddOne",
+           BaseStyle -> "Link",
+           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+          ],
+          Cell["add one to something", "TableText"]
+         },
+         {
+          ButtonBox[
+           "AddTwo",
+           BaseStyle -> "Link",
+           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+          ],
+          Cell["add two to something", "TableText"]
+         }
+        }
+       ]
+      ],
+      "DefinitionBox",
+      CellID -> 27794316
+     ],
+     Cell[
+      "Two uninteresting functions (one is less interesting than the other).",
+      "Caption",
+      CellID -> 261768492
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Natural numbers", "Subsection", CellID -> 440848074],
+        Cell[
+         BoxData[RowBox[{RowBox[{"$Line", "=", "0"}], ";"}]],
+         "Input",
+         "FutureExample",
+         CellDingbat -> Cell[
+          BoxData[
+           TooltipBox[
+            Cell["rhennigan      ", "TentativeID"],
+            "2022-04-08"
+           ]
+          ],
+          "TentativeWrapper"
+         ],
+         CellLabel -> "In[6]:=",
+         CellID -> 301997458
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             {
+              "Create a revolutionary function that gives you the ",
+              Cell[
+               BoxData[
+                SuperscriptBox[StyleBox["n", "TI"], StyleBox["th", "TI"]]
+               ],
+               "InlineFormula",
+               FormatType -> StandardForm
+              ],
+              " natural number:"
+             }
+            ],
+            "MathCaption",
+            CellID -> 233718922
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[
+                {
+                 RowBox[{"naturalNumber", "[", "n_", "]"}],
+                 ":=",
+                 RowBox[
+                  {"Nest", "[", RowBox[{"AddOne", ",", "0", ",", "n"}], "]"}
+                 ]
+                }
+               ],
+               ";"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[1]:=",
+            CellID -> 591784741
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "Simply incredible:",
+            "MathCaption",
+            CellID -> 44169364
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[RowBox[{"naturalNumber", "[", "5", "]"}]],
+               "Input",
+               CellLabel -> "In[2]:=",
+               CellID -> 353803867
+              ],
+              Cell[
+               BoxData["5"],
+               "Output",
+               CellLabel -> "Out[2]=",
+               CellID -> 37377235
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "The number 24 was previously believed to be the highest number:",
+            "MathCaption",
+            CellID -> 463160428
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[RowBox[{"naturalNumber", "[", "24", "]"}]],
+               "Input",
+               CellLabel -> "In[3]:=",
+               CellID -> 325481993
+              ],
+              Cell[
+               BoxData["24"],
+               "Output",
+               CellLabel -> "Out[3]=",
+               CellID -> 38900116
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "Achieve a new record:",
+            "MathCaption",
+            CellID -> 99027262
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[RowBox[{"naturalNumber", "[", "46", "]"}]],
+               "Input",
+               CellLabel -> "In[4]:=",
+               CellID -> 57697528
+              ],
+              Cell[
+               BoxData["46"],
+               "Output",
+               CellLabel -> "Out[4]=",
+               CellID -> 963072413
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Addition", "Subsection", CellID -> 133324819],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             {
+              Cell[
+               BoxData[
+                ButtonBox[
+                 "AddOne",
+                 BaseStyle -> "Link",
+                 ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+                ]
+               ],
+               "InlineFormula"
+              ],
+              " is all you need to add any numbers:"
+             }
+            ],
+            "MathCaption",
+            CellID -> 267834415
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[
+                {
+                 RowBox[{"plus", "[", RowBox[{"x_", ",", "y_"}], "]"}],
+                 ":=",
+                 RowBox[
+                  {"Nest", "[", RowBox[{"AddOne", ",", "x", ",", "y"}], "]"}
+                 ]
+                }
+               ],
+               ";"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[1]:=",
+            CellID -> 429040293
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"plus", "[", RowBox[{"3", ",", "4"}], "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[2]:=",
+               CellID -> 36382794
+              ],
+              Cell[
+               BoxData["7"],
+               "Output",
+               CellLabel -> "Out[2]=",
+               CellID -> 52162604
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "This is a really big number:",
+            "MathCaption",
+            CellID -> 284109211
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"plus", "[", RowBox[{"42", ",", "1337"}], "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[3]:=",
+               CellID -> 122263726
+              ],
+              Cell[
+               BoxData["1379"],
+               "Output",
+               CellLabel -> "Out[3]=",
+               CellID -> 147506119
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "Assume that negative numbers do not exist:",
+            "MathCaption",
+            CellID -> 265020123
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {"plus", "[", RowBox[{"5", ",", RowBox[{"-", "3"}]}], "]"}
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[4]:=",
+               CellID -> 729280220
+              ],
+              Cell[
+               BoxData[
+                TemplateBox[
+                 {
+                  "Nest",
+                  "intnm",
+                  "\"Non-negative machine-sized integer expected at position \\!\\(\\*RowBox[{\\\"3\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Nest\\\", \\\"[\\\", RowBox[{\\\"AddOne\\\", \\\",\\\", \\\"5\\\", \\\",\\\", RowBox[{\\\"-\\\", \\\"3\\\"}]}], \\\"]\\\"}]\\).\"",
+                  2,
+                  4,
+                  8,
+                  34018123167644280806,
+                  "Local"
+                 },
+                 "MessageTemplate"
+                ]
+               ],
+               "Message",
+               "MSG",
+               CellLabel -> "During evaluation of In[4]:=",
+               CellID -> 11096501
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Nest",
+                  "[",
+                  RowBox[{"AddOne", ",", "5", ",", RowBox[{"-", "3"}]}],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[4]=",
+               CellID -> 679153292
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "Real numbers are too weird to be used in arithmetic anyway:",
+            "MathCaption",
+            CellID -> 872682586
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"plus", "[", RowBox[{"5", ",", "1.23"}], "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[5]:=",
+               CellID -> 540956481
+              ],
+              Cell[
+               BoxData[
+                TemplateBox[
+                 {
+                  "Nest",
+                  "intnm",
+                  "\"Non-negative machine-sized integer expected at position \\!\\(\\*RowBox[{\\\"3\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Nest\\\", \\\"[\\\", RowBox[{\\\"AddOne\\\", \\\",\\\", \\\"5\\\", \\\",\\\", \\\"1.23`\\\"}], \\\"]\\\"}]\\).\"",
+                  2,
+                  5,
+                  9,
+                  34018123167644280806,
+                  "Local"
+                 },
+                 "MessageTemplate"
+                ]
+               ],
+               "Message",
+               "MSG",
+               CellLabel -> "During evaluation of In[5]:=",
+               CellID -> 277168289
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Nest",
+                  "[",
+                  RowBox[{"AddOne", ",", "5", ",", "1.23`"}],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[5]=",
+               CellID -> 530442243
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Multiplication", "Subsection", CellID -> 447791814],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             {
+              Cell[
+               BoxData[
+                ButtonBox[
+                 "AddOne",
+                 BaseStyle -> "Link",
+                 ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+                ]
+               ],
+               "InlineFormula"
+              ],
+              " is all you need to multiply any numbers:"
+             }
+            ],
+            "MathCaption",
+            CellID -> 250141956
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[
+                {
+                 RowBox[{"times", "[", RowBox[{"x_", ",", "y_"}], "]"}],
+                 ":=",
+                 RowBox[
+                  {
+                   "Nest",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       RowBox[{"OperatorApplied", "[", "plus", "]"}],
+                       "[",
+                       "x",
+                       "]"
+                      }
+                     ],
+                     ",",
+                     "0",
+                     ",",
+                     "y"
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               ";"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[6]:=",
+            CellID -> 429797389
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"times", "[", RowBox[{"3", ",", "4"}], "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[7]:=",
+               CellID -> 14781145
+              ],
+              Cell[
+               BoxData["12"],
+               "Output",
+               CellLabel -> "Out[7]=",
+               CellID -> 4372310
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "Just look at the absolute size of this number:",
+            "MathCaption",
+            CellID -> 633987668
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"times", "[", RowBox[{"42", ",", "1337"}], "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[8]:=",
+               CellID -> 471225119
+              ],
+              Cell[
+               BoxData["56154"],
+               "Output",
+               CellLabel -> "Out[8]=",
+               CellID -> 572668373
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Advanced Mathematics",
+         "Subsection",
+         CellID -> 91177980
+        ],
+        Cell[
+         "Subtraction and division are considered very difficult and should be left to professionals.",
+         "Text",
+         CellID -> 19629590
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Related Guides",
+         "TutorialMoreAboutSection",
+         CellID -> 442209837
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "Sample Guide",
+           BaseStyle -> "Link",
+           ButtonData -> "paclet:MyPublisher/SamplePaclet/guide/SampleGuide"
+          ]
+         ],
+         "TutorialMoreAbout",
+         CellID -> 35572552
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Related Tech Notes",
+         "RelatedTutorialsSection",
+         CellID -> 26507238
+        ],
+        Cell["XXXX", "RelatedTutorials", CellID -> 20645852]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ WindowStatusArea -> Automatic,
+ TaggingRules -> {
+  "InformationPopupMenuItemAdded" -> True,
+  "NotebookIndexQ" -> True,
+  "NotebookLastIndexed" -> DateObject[
+   {2022, 4, 8, 12, 45, 31.9168217`9.256594542082341},
+   "Instant",
+   "Gregorian",
+   -4.
+  ],
+  "NotebookUUID" -> "4e691753-3ac5-44c6-aa24-ac9453b87583"
+ },
+ FrontEndVersion -> "13.0 for Microsoft Windows (64-bit) (January 26, 2022)",
+ StyleDefinitions -> FrontEnd`FileName[
+  {"Wolfram"},
+  "TechNotePageStylesExt.nb",
+  CharacterEncoding -> "UTF-8"
+ ],
+ ExpressionUUID -> "4e691753-3ac5-44c6-aa24-ac9453b87583"
+]

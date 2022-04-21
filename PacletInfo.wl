@@ -1,20 +1,20 @@
 PacletObject[ <|
-    "Name"             -> "MyPublisher/SamplePaclet",
+    "Name"             -> "SamplePublisher/SamplePaclet",
     "Description"      -> "A complete sample Paclet",
     "Creator"          -> "Example Author",
     "Version"          -> "1.0.3",
     "WolframVersion"   -> "13.0+",
     "License"          -> "MIT",
-    "PublisherID"      -> "MyPublisher",
+    "PublisherID"      -> "SamplePublisher",
     "SourceControlURL" -> "https://github.com/rhennigan/PacletCICD-Examples-Sample",
     "Extensions"       -> {
         {
             "Kernel",
             "Root"    -> "Kernel",
-            "Context" -> { "MyPublisher`SamplePaclet`" },
+            "Context" -> { "SamplePublisher`SamplePaclet`" },
             "Symbols" -> {
-                "MyPublisher`SamplePaclet`AddOne",
-                "MyPublisher`SamplePaclet`AddTwo"
+                "SamplePublisher`SamplePaclet`AddOne",
+                "SamplePublisher`SamplePaclet`AddTwo"
             }
         },
         {

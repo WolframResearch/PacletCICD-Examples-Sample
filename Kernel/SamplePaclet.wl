@@ -1,2 +1,2 @@
-<<MyPublisher`SamplePaclet`AddOne`
-<<MyPublisher`SamplePaclet`AddTwo`
+<<SamplePublisher`SamplePaclet`AddOne`
+<<SamplePublisher`SamplePaclet`AddTwo`

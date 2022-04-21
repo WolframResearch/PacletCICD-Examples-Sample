@@ -36,19 +36,19 @@ Notebook[
       CellID -> 278079557
      ],
      Cell[
-      "MyPublisher/SamplePaclet",
+      "SamplePublisher/SamplePaclet",
       "Categorization",
       CellLabel -> "Paclet Name",
       CellID -> 315981816
      ],
      Cell[
-      "MyPublisher`SamplePaclet`",
+      "SamplePublisher`SamplePaclet`",
       "Categorization",
       CellLabel -> "Context",
       CellID -> 506589533
      ],
      Cell[
-      "MyPublisher/SamplePaclet/ref/AddOne",
+      "SamplePublisher/SamplePaclet/ref/AddOne",
       "Categorization",
       CellLabel -> "URI",
       CellID -> 109513560
@@ -117,7 +117,7 @@ Notebook[
             ButtonBox[
              "AddOne",
              BaseStyle -> "Link",
-             ButtonData -> "paclet:MyPublisher/AdvancedSamplePaclet/CompiledLibraryExamplePaclet/ref/AddOne"
+             ButtonData -> "paclet:SamplePublisher/AdvancedSamplePaclet/CompiledLibraryExamplePaclet/ref/AddOne"
             ],
             "[",
             StyleBox["x", "TI"],
@@ -231,7 +231,7 @@ Notebook[
      Cell[
       BoxData[
        RowBox[
-        {"Needs", "[", "\"MyPublisher`SamplePaclet`\"", "]"}
+        {"Needs", "[", "\"SamplePublisher`SamplePaclet`\"", "]"}
        ]
       ],
       "Input",
@@ -403,7 +403,7 @@ Notebook[
   "CreationDate" -> "02-06-2022 15:10:56"
  |>,
  CellContext -> "Global`",
- FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (February 16, 2022)",
+ FrontEndVersion -> "13.0 for Microsoft Windows (64-bit) (January 26, 2022)",
  StyleDefinitions -> FrontEnd`FileName[
   {"Wolfram"},
   "FunctionPageStylesExt.nb",

@@ -1,5 +1,5 @@
 VerificationTest[
-    Needs[ "MyPublisher`SamplePaclet`" ],
+    Needs[ "SamplePublisher`SamplePaclet`" ],
     Null,
     TestID -> "AddOne-Initialization"
 ]

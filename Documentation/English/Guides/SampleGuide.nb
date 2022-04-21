@@ -36,19 +36,19 @@ Notebook[
       CellID -> 363220203
      ],
      Cell[
-      "MyPublisher/SamplePaclet",
+      "SamplePublisher/SamplePaclet",
       "Categorization",
       CellLabel -> "Paclet Name",
       CellID -> 73239438
      ],
      Cell[
-      "MyPublisher`SamplePaclet`",
+      "SamplePublisher`SamplePaclet`",
       "Categorization",
       CellLabel -> "Context",
       CellID -> 356463850
      ],
      Cell[
-      "MyPublisher/SamplePaclet/guide/SampleGuide",
+      "SamplePublisher/SamplePaclet/guide/SampleGuide",
       "Categorization",
       CellLabel -> "URI",
       CellID -> 358425830
@@ -93,7 +93,7 @@ Notebook[
           ButtonBox[
            "AddOne",
            BaseStyle -> "Link",
-           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+           ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddOne"
           ]
          ],
          "InlineGuideFunction"
@@ -112,7 +112,7 @@ Notebook[
           ButtonBox[
            "AddTwo",
            BaseStyle -> "Link",
-           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+           ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddTwo"
           ]
          ],
          "InlineGuideFunction"
@@ -135,7 +135,7 @@ Notebook[
              ButtonBox[
               "AddOne",
               BaseStyle -> "Link",
-              ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+              ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddOne"
              ]
             ],
             "InlineFormula"
@@ -146,7 +146,7 @@ Notebook[
              ButtonBox[
               "AddTwo",
               BaseStyle -> "Link",
-              ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+              ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddTwo"
              ]
             ],
             "InlineFormula"
@@ -177,7 +177,7 @@ Notebook[
        ButtonBox[
         "Arithmetic",
         BaseStyle -> "Link",
-        ButtonData -> "paclet:MyPublisher/SamplePaclet/tutorial/Arithmetic"
+        ButtonData -> "paclet:SamplePublisher/SamplePaclet/tutorial/Arithmetic"
        ]
       ],
       "GuideTutorial",

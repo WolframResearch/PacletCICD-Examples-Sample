@@ -31,19 +31,19 @@ Notebook[
       CellID -> 634641903
      ],
      Cell[
-      "MyPublisher/SamplePaclet",
+      "SamplePublisher/SamplePaclet",
       "Categorization",
       CellLabel -> "Paclet Name",
       CellID -> 162634724
      ],
      Cell[
-      "MyPublisher`SamplePaclet`",
+      "SamplePublisher`SamplePaclet`",
       "Categorization",
       CellLabel -> "Context",
       CellID -> 107266034
      ],
      Cell[
-      "MyPublisher/SamplePaclet/tutorial/Arithmetic",
+      "SamplePublisher/SamplePaclet/tutorial/Arithmetic",
       "Categorization",
       CellLabel -> "URI",
       CellID -> 323052657
@@ -66,7 +66,7 @@ Notebook[
     {
      Cell["Arithmetic", "Title", CellID -> 230029336],
      Cell[
-      "Arithmetic is hard. This tutorial does not address that in any way. If anything, this will make it harder. MyPublisher/SamplePaclet gives you all the functions you need to do harder-than-necessary arithmetic.",
+      "Arithmetic is hard. This tutorial does not address that in any way. If anything, this will make it harder. SamplePublisher/SamplePaclet gives you all the functions you need to do harder-than-necessary arithmetic.",
       "Text",
       CellID -> 3438887
      ],
@@ -78,7 +78,7 @@ Notebook[
           ButtonBox[
            "AddOne",
            BaseStyle -> "Link",
-           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+           ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddOne"
           ],
           Cell["add one to something", "TableText"]
          },
@@ -86,7 +86,7 @@ Notebook[
           ButtonBox[
            "AddTwo",
            BaseStyle -> "Link",
-           ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddTwo"
+           ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddTwo"
           ],
           Cell["add two to something", "TableText"]
          }
@@ -278,7 +278,7 @@ Notebook[
                 ButtonBox[
                  "AddOne",
                  BaseStyle -> "Link",
-                 ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+                 ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddOne"
                 ]
                ],
                "InlineFormula"
@@ -515,7 +515,7 @@ Notebook[
                 ButtonBox[
                  "AddOne",
                  BaseStyle -> "Link",
-                 ButtonData -> "paclet:MyPublisher/SamplePaclet/ref/AddOne"
+                 ButtonData -> "paclet:SamplePublisher/SamplePaclet/ref/AddOne"
                 ]
                ],
                "InlineFormula"
@@ -659,7 +659,7 @@ Notebook[
           ButtonBox[
            "Sample Guide",
            BaseStyle -> "Link",
-           ButtonData -> "paclet:MyPublisher/SamplePaclet/guide/SampleGuide"
+           ButtonData -> "paclet:SamplePublisher/SamplePaclet/guide/SampleGuide"
           ]
          ],
          "TutorialMoreAbout",

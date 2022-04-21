@@ -1777,7 +1777,7 @@ Notebook[
                         ]
                        ]
                       },
-                      Annotation[#1, "Charting`Private`Tag$111074#1"] & 
+                      Annotation[#1, "Charting`Private`Tag$111074#1"] &
                      ],
                      TagBox[
                       {
@@ -1790,7 +1790,7 @@ Notebook[
                         ]
                        ]
                       },
-                      Annotation[#1, "Charting`Private`Tag$111074#2"] & 
+                      Annotation[#1, "Charting`Private`Tag$111074#2"] &
                      ],
                      TagBox[
                       {
@@ -1803,7 +1803,7 @@ Notebook[
                         ]
                        ]
                       },
-                      Annotation[#1, "Charting`Private`Tag$111074#3"] & 
+                      Annotation[#1, "Charting`Private`Tag$111074#3"] &
                      ],
                      TagBox[
                       {
@@ -1816,7 +1816,7 @@ Notebook[
                         ]
                        ]
                       },
-                      Annotation[#1, "Charting`Private`Tag$111074#4"] & 
+                      Annotation[#1, "Charting`Private`Tag$111074#4"] &
                      ]
                     }
                    }
@@ -2641,7 +2641,7 @@ Notebook[
                          ]
                         ]
                        },
-                       Annotation[#1, "Charting`Private`Tag$93560#1"] & 
+                       Annotation[#1, "Charting`Private`Tag$93560#1"] &
                       ],
                       TagBox[
                        {
@@ -2654,7 +2654,7 @@ Notebook[
                          ]
                         ]
                        },
-                       Annotation[#1, "Charting`Private`Tag$93560#2"] & 
+                       Annotation[#1, "Charting`Private`Tag$93560#2"] &
                       ]
                      },
                      { }
@@ -3517,7 +3517,7 @@ Notebook[
             },
             CellID -> 57534933
            ],
-           Cell["Example Author", "Text", CellID -> 13973223]
+           Cell["Sample Author", "Text", CellID -> 13973223]
           },
           Open
          ]

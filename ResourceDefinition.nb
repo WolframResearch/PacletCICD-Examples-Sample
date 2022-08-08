@@ -86,7 +86,7 @@ Notebook[
                  ButtonFunction :>
                   DefinitionNotebookClient`RedirectOutputsToConsole[
                    Block[ { $ContextPath },
-                    
+
                     Quiet[
                      Needs["PacletResource`DefinitionNotebook`"],
                      MessageName[General, "shdw"]
@@ -2033,8 +2033,8 @@ Notebook[
               ButtonBox[
                "PacletCICD",
                BaseStyle -> "Hyperlink",
-               ButtonData -> {URL["https://github.com/rhennigan/PacletCICD"], None},
-               ButtonNote -> "https://github.com/rhennigan/PacletCICD"
+               ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None},
+               ButtonNote -> "https://github.com/WolframResearch/PacletCICD"
               ],
               " documentation examples. This paclet is meant to demonstrate basic CI/CD workflows for typical paclet layouts."
              }
@@ -3649,7 +3649,7 @@ Notebook[
             CellID -> 221376991
            ],
            Cell[
-            "https://github.com/rhennigan/PacletCICD-Examples-Sample",
+            "https://github.com/WolframResearch/PacletCICD-Examples-Sample",
             "Text",
             CellID -> 376824266
            ]
@@ -3928,17 +3928,17 @@ Notebook[
                            ""
                           ],
                           Function[
-                           
+
                            CurrentValue[
                             EvaluationCell[],
                             {TaggingRules, "RadioButtonValue"}
-                           ] = 
+                           ] =
                             "Other";
 
                            CurrentValue[
                             EvaluationCell[],
                             {TaggingRules, "SpecifiedLicenseID"}
-                           ] = 
+                           ] =
                             Replace[#1, "" -> Null];
                           ]
                          ],
@@ -4795,10 +4795,10 @@ Notebook[
            Cell[
             TextData[
              ButtonBox[
-              "GitHub - rhennigan/PacletCICD: Continuous integration and deployment for Wolfram Language Paclets",
+              "GitHub - WolframResearch/PacletCICD: Continuous integration and deployment for Wolfram Language Paclets",
               BaseStyle -> "Hyperlink",
-              ButtonData -> {URL["https://github.com/rhennigan/PacletCICD"], None},
-              ButtonNote -> "https://github.com/rhennigan/PacletCICD"
+              ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None},
+              ButtonNote -> "https://github.com/WolframResearch/PacletCICD"
              ]
             ],
             "Item",
@@ -4807,15 +4807,15 @@ Notebook[
            Cell[
             TextData[
              ButtonBox[
-              "GitHub - rhennigan/PacletCICD-Examples-Sample",
+              "GitHub - WolframResearch/PacletCICD-Examples-Sample",
               BaseStyle -> "Hyperlink",
               ButtonData -> {
                URL[
-                "https://github.com/rhennigan/PacletCICD-Examples-Sample"
+                "https://github.com/WolframResearch/PacletCICD-Examples-Sample"
                ],
                None
               },
-              ButtonNote -> "https://github.com/rhennigan/PacletCICD-Examples-Sample"
+              ButtonNote -> "https://github.com/WolframResearch/PacletCICD-Examples-Sample"
              ]
             ],
             "Item",
@@ -7725,13 +7725,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7741,14 +7741,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       2790153672590285854;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Template Input";
                          DefinitionNotebookClient`TemplateInput[]
@@ -7852,13 +7852,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7868,14 +7868,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       4138174468017918531;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Literal Input";
                          DefinitionNotebookClient`LiteralInput[]
@@ -7979,13 +7979,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7995,17 +7995,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       1887802176716758884;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
-                         
-                         DefinitionNotebookClient`$ClickedButton = 
+
+                         DefinitionNotebookClient`$ClickedButton =
                           "Insert Delimiter";
 
                          DefinitionNotebookClient`DelimiterInsert[]
@@ -8116,13 +8116,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-                     
+
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8132,8 +8132,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-                      
-                      DefinitionNotebookClient`$ButtonCodeID = 
+
+                      DefinitionNotebookClient`$ButtonCodeID =
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8225,13 +8225,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8241,18 +8241,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       5800166344906378520;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Insert table with two columns";
 
                          DefinitionNotebookClient`TableInsert[2]
@@ -8272,13 +8272,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8292,11 +8292,11 @@ Notebook[
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Insert table with three columns";
 
                          DefinitionNotebookClient`TableInsert[3]
@@ -8316,13 +8316,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8332,18 +8332,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       4413051590217973467;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Add a row to the selected table";
 
                          DefinitionNotebookClient`TableRowInsert[]
@@ -8363,13 +8363,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8379,18 +8379,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       9150037060110806081;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Sort the selected table";
 
                          DefinitionNotebookClient`TableSort[]
@@ -8410,13 +8410,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8426,18 +8426,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       2347719643166780208;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Merge selected tables";
 
                          DefinitionNotebookClient`TableMerge[]
@@ -8477,13 +8477,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-                     
+
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8493,8 +8493,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-                      
-                      DefinitionNotebookClient`$ButtonCodeID = 
+
+                      DefinitionNotebookClient`$ButtonCodeID =
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8586,13 +8586,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8602,18 +8602,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       2572781756330727330;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Insert comment for reviewer";
 
                          DefinitionNotebookClient`CommentInsert[]
@@ -8633,13 +8633,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8649,18 +8649,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       3646530685697756512;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Mark/unmark selected cells as comments";
 
                          DefinitionNotebookClient`CommentToggle[]
@@ -8680,13 +8680,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8696,18 +8696,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       1866935765212102190;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Mark/unmark selected cells as excluded";
 
                          DefinitionNotebookClient`ExclusionToggle[]
@@ -8747,13 +8747,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-                     
+
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8763,8 +8763,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-                      
-                      DefinitionNotebookClient`$ButtonCodeID = 
+
+                      DefinitionNotebookClient`$ButtonCodeID =
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8856,13 +8856,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8872,17 +8872,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       1266981032716546660;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
-                         
-                         DefinitionNotebookClient`$ClickedButton = 
+
+                         DefinitionNotebookClient`$ClickedButton =
                           "DocumentationTools";
 
                          DefinitionNotebookClient`$ClickedAction = "Open Palette";
@@ -8905,13 +8905,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8921,21 +8921,21 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       7312678540702684447;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
-                         
-                         DefinitionNotebookClient`$ClickedButton = 
+
+                         DefinitionNotebookClient`$ClickedButton =
                           "DocumentationTools";
 
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "New Function Page";
 
                          PacletResource`DefinitionNotebook`NewFunctionPage[
@@ -8957,13 +8957,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8973,17 +8973,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       8084030535806498779;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
-                         
-                         DefinitionNotebookClient`$ClickedButton = 
+
+                         DefinitionNotebookClient`$ClickedButton =
                           "DocumentationTools";
 
                          DefinitionNotebookClient`$ClickedAction = "New Guide Page";
@@ -9678,12 +9678,12 @@ Notebook[
                ],
                Function[
                 Annotation[
-                 
-                 DefinitionNotebookClient`$ButtonCodeID = 
+
+                 DefinitionNotebookClient`$ButtonCodeID =
                   5906117565281445171;
 
                  (
-                 DefinitionNotebookClient`$ClickedButton = 
+                 DefinitionNotebookClient`$ClickedButton =
                   "Style Guidelines";
 
                  DefinitionNotebookClient`ViewStyleGuidelines[
@@ -9756,8 +9756,8 @@ Notebook[
                ],
                Function[
                 Annotation[
-                 
-                 DefinitionNotebookClient`$ButtonCodeID = 
+
+                 DefinitionNotebookClient`$ButtonCodeID =
                   5074018684552945401;
 
                  (DefinitionNotebookClient`$ClickedButton = "Tools";
@@ -9801,7 +9801,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID = 
+                  DefinitionNotebookClient`$ButtonCodeID =
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -9818,18 +9818,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9839,18 +9839,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       4301941258590251066;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Definition Notebook";
 
                          PacletResource`DefinitionNotebook`CheckPacletNotebook[
@@ -9862,8 +9862,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[4301941258590251066]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9877,18 +9877,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9898,14 +9898,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       1312802444570235546;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "Paclet Files";
@@ -9918,8 +9918,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[1312802444570235546]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9933,18 +9933,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9954,14 +9954,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       6325522174070009817;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "Documentation";
@@ -9974,8 +9974,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[6325522174070009817]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9990,18 +9990,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10011,14 +10011,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       8900916902137752067;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "All";
@@ -10031,8 +10031,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[8900916902137752067]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10057,7 +10057,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID = 
+                  DefinitionNotebookClient`$ButtonCodeID =
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -10074,18 +10074,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10095,14 +10095,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       1579518736508902704;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Build";
                          DefinitionNotebookClient`$ClickedAction = "Documentation";
@@ -10115,8 +10115,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[1579518736508902704]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10130,18 +10130,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10151,14 +10151,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       5625167833203047250;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Build";
                          DefinitionNotebookClient`$ClickedAction = "All";
@@ -10171,8 +10171,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[5625167833203047250]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10197,7 +10197,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID = 
+                  DefinitionNotebookClient`$ButtonCodeID =
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -10214,18 +10214,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10235,18 +10235,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       8714502586816766511;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Locally on this computer";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10261,8 +10261,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[8714502586816766511]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10276,18 +10276,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10297,18 +10297,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       5593410685219912767;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "Publicly in the cloud";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10323,8 +10323,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[5593410685219912767]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10338,18 +10338,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      ProgressIndicator[Appearance -> "Necklace"];
 
-                    
+
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10359,18 +10359,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       2850084946728613817;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode = 
+                       DefinitionNotebookClient`$ButtonCode =
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-                         
-                         DefinitionNotebookClient`$ClickedAction = 
+
+                         DefinitionNotebookClient`$ClickedAction =
                           "In this session only";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10385,8 +10385,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[2850084946728613817]
                     ],
-                    
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10413,7 +10413,7 @@ Notebook[
                  (CurrentValue[
                   EvaluationNotebook[],
                   {TaggingRules, "StatusMessage"}
-                 ] = 
+                 ] =
                   "")
                ],
                "Text",
@@ -10522,8 +10522,8 @@ Notebook[
                    ],
                    Function[
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       3196298050911436087;
 
                      (DefinitionNotebookClient`$ClickedButton = "SubmitUpdate";
@@ -10635,8 +10635,8 @@ Notebook[
                    ],
                    Function[
                     Annotation[
-                     
-                     DefinitionNotebookClient`$ButtonCodeID = 
+
+                     DefinitionNotebookClient`$ButtonCodeID =
                       3704832848557640569;
 
                      (DefinitionNotebookClient`$ClickedButton = "Submit";
@@ -11419,25 +11419,25 @@ Notebook[
           ],
           ButtonFunction :>
            With[ { RSNB`nb$ = ButtonNotebook[] },
-            
+
             If[ #4,
-             CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+             CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
               ProgressIndicator[Appearance -> "Necklace"]
             ];
 
-            
+
             With[ { RSNB`$cp$ = $ContextPath },
              Quiet[
               Block[
                {
                 $ContextPath = RSNB`$cp$,
-                ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+                ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                  False,
                 DefinitionNotebookClient`$ButtonCodeID = None
                },
                Internal`WithLocalSettings[
                 DefinitionNotebookClient`$ButtonsDisabled = True;
-                
+
                 Once[
                  ReleaseHold[
                   CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -11447,8 +11447,8 @@ Notebook[
 
                 Needs["DefinitionNotebookClient`"],
                 Annotation[
-                 
-                 DefinitionNotebookClient`$ButtonCodeID = 
+
+                 DefinitionNotebookClient`$ButtonCodeID =
                   3145484069433207908;
 
                  DefinitionNotebookClient`CheckForUpdates[
@@ -11465,7 +11465,7 @@ Notebook[
              ]
             ];
 
-            CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
+            CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
              "";
            ],
           FrameMargins -> {{5, 5}, {0, 0}},
@@ -18086,7 +18086,7 @@ Notebook[
       "ReturnKeyDown" :>
        With[ { RSNB`nb$ = Notebooks[EvaluationCell[]] },
         SelectionMove[EvaluationCell[], After, Cell];
-        
+
         NotebookWrite[
          RSNB`nb$,
          Cell[
@@ -18380,13 +18380,13 @@ Notebook[
              Block[
               {
                $ContextPath = RSNB`$cp$,
-               ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+               ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                 False,
                DefinitionNotebookClient`$ButtonCodeID = None
               },
               Internal`WithLocalSettings[
                DefinitionNotebookClient`$ButtonsDisabled = True;
-               
+
                Once[
                 ReleaseHold[
                  CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -18396,14 +18396,14 @@ Notebook[
 
                Needs["DefinitionNotebookClient`"],
                Annotation[
-                
-                DefinitionNotebookClient`$ButtonCodeID = 
+
+                DefinitionNotebookClient`$ButtonCodeID =
                  1053094956087266899;
 
                 DefinitionNotebookClient`CheckForUpdates[
                  RSNB`nb$,
                  ReleaseHold[
-                  DefinitionNotebookClient`$ButtonCode = 
+                  DefinitionNotebookClient`$ButtonCode =
                    HoldForm[
                     If[ $VersionNumber >= 13.0,
                      DefinitionNotebookClient`LocalFileInputDialog[
@@ -18459,13 +18459,13 @@ Notebook[
              Block[
               {
                $ContextPath = RSNB`$cp$,
-               ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
+               ResourceSystemClient`$AsyncronousResourceInformationUpdates =
                 False,
                DefinitionNotebookClient`$ButtonCodeID = None
               },
               Internal`WithLocalSettings[
                DefinitionNotebookClient`$ButtonsDisabled = True;
-               
+
                Once[
                 ReleaseHold[
                  CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -18475,14 +18475,14 @@ Notebook[
 
                Needs["DefinitionNotebookClient`"],
                Annotation[
-                
-                DefinitionNotebookClient`$ButtonCodeID = 
+
+                DefinitionNotebookClient`$ButtonCodeID =
                  4898876371082581810;
 
                 DefinitionNotebookClient`CheckForUpdates[
                  RSNB`nb$,
                  ReleaseHold[
-                  DefinitionNotebookClient`$ButtonCode = 
+                  DefinitionNotebookClient`$ButtonCode =
                    HoldForm[
                     If[ $VersionNumber >= 13.0,
                      DefinitionNotebookClient`LocalFileInputDialog[

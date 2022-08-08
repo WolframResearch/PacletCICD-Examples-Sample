@@ -213,11 +213,11 @@ Notebook[
      Cell[
       TextData[
        ButtonBox[
-        "https://github.com/rhennigan/PacletCICD-Examples-Sample",
+        "https://github.com/WolframResearch/PacletCICD-Examples-Sample",
         BaseStyle -> "Hyperlink",
         ButtonData -> {
          URL[
-          "https://github.com/rhennigan/PacletCICD-Examples-Sample"
+          "https://github.com/WolframResearch/PacletCICD-Examples-Sample"
          ],
          None
         }
@@ -229,9 +229,9 @@ Notebook[
      Cell[
       TextData[
        ButtonBox[
-        "https://github.com/rhennigan/PacletCICD",
+        "https://github.com/WolframResearch/PacletCICD",
         BaseStyle -> "Hyperlink",
-        ButtonData -> {URL["https://github.com/rhennigan/PacletCICD"], None}
+        ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None}
        ]
       ],
       "GuideRelatedLinks",

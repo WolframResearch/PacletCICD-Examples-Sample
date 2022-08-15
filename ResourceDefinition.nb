@@ -86,7 +86,7 @@ Notebook[
                  ButtonFunction :>
                   DefinitionNotebookClient`RedirectOutputsToConsole[
                    Block[ { $ContextPath },
-
+                    
                     Quiet[
                      Needs["PacletResource`DefinitionNotebook`"],
                      MessageName[General, "shdw"]
@@ -2033,7 +2033,10 @@ Notebook[
               ButtonBox[
                "PacletCICD",
                BaseStyle -> "Hyperlink",
-               ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None},
+               ButtonData -> {
+                URL["https://github.com/WolframResearch/PacletCICD"],
+                None
+               },
                ButtonNote -> "https://github.com/WolframResearch/PacletCICD"
               ],
               " documentation examples. This paclet is meant to demonstrate basic CI/CD workflows for typical paclet layouts."
@@ -2375,7 +2378,7 @@ Notebook[
              "Initialization for Examples",
              "TemplateCellGroup"
             },
-            CellLabel -> "In[1]:=",
+            CellLabel -> "In[4]:=",
             CellID -> 844085818
            ],
            Cell[
@@ -2386,51 +2389,7 @@ Notebook[
                 {
                  "PacletDirectoryLoad",
                  "[",
-                 InterpretationBox[
-                  DynamicModuleBox[
-                   {Typeset`open = False},
-                   TemplateBox[
-                    {
-                     "Expression",
-                     StyleBox[
-                      "\"Paclet Directory\"",
-                      "IconizedCustomName",
-                      StripOnInput -> False
-                     ],
-                     GridBox[
-                      {
-                       {
-                        RowBox[
-                         {
-                          TagBox["\"Head: \"", "IconizedLabel"],
-                          "\[InvisibleSpace]",
-                          TagBox["Symbol", "IconizedItem"]
-                         }
-                        ]
-                       },
-                       {
-                        RowBox[
-                         {
-                          TagBox["\"Byte count: \"", "IconizedLabel"],
-                          "\[InvisibleSpace]",
-                          TagBox["0", "IconizedItem"]
-                         }
-                        ]
-                       }
-                      },
-                      GridBoxAlignment -> {"Columns" -> {{Left}}},
-                      DefaultBaseStyle -> "Column",
-                      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}
-                     ],
-                     Dynamic[Typeset`open]
-                    },
-                    "IconizedObject"
-                   ]
-                  ],
-                  PacletResource`DefinitionNotebook`$PacletDirectory,
-                  SelectWithContents -> True,
-                  Selectable -> False
-                 ],
+                 RowBox[{"NotebookDirectory", "[", "]"}],
                  "]"
                 }
                ],
@@ -2441,7 +2400,7 @@ Notebook[
             "Input",
             "Excluded",
             InitializationCell -> True,
-            CellLabel -> "In[3]:=",
+            CellLabel -> "In[1]:=",
             CellID -> 372775486
            ],
            Cell[
@@ -2449,56 +2408,7 @@ Notebook[
              RowBox[
               {
                RowBox[
-                {
-                 "Needs",
-                 "[",
-                 InterpretationBox[
-                  DynamicModuleBox[
-                   {Typeset`open = False},
-                   TemplateBox[
-                    {
-                     "Expression",
-                     StyleBox[
-                      "\"Paclet Context\"",
-                      "IconizedCustomName",
-                      StripOnInput -> False
-                     ],
-                     GridBox[
-                      {
-                       {
-                        RowBox[
-                         {
-                          TagBox["\"Head: \"", "IconizedLabel"],
-                          "\[InvisibleSpace]",
-                          TagBox["Symbol", "IconizedItem"]
-                         }
-                        ]
-                       },
-                       {
-                        RowBox[
-                         {
-                          TagBox["\"Byte count: \"", "IconizedLabel"],
-                          "\[InvisibleSpace]",
-                          TagBox["0", "IconizedItem"]
-                         }
-                        ]
-                       }
-                      },
-                      GridBoxAlignment -> {"Columns" -> {{Left}}},
-                      DefaultBaseStyle -> "Column",
-                      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}
-                     ],
-                     Dynamic[Typeset`open]
-                    },
-                    "IconizedObject"
-                   ]
-                  ],
-                  PacletResource`DefinitionNotebook`$PacletContext,
-                  SelectWithContents -> True,
-                  Selectable -> False
-                 ],
-                 "]"
-                }
+                {"Needs", "[", "\"SamplePublisher`SamplePaclet`\"", "]"}
                ],
                ";"
               }
@@ -2507,7 +2417,7 @@ Notebook[
             "Input",
             "Excluded",
             InitializationCell -> True,
-            CellLabel -> "In[4]:=",
+            CellLabel -> "In[2]:=",
             CellID -> 996669468
            ]
           },
@@ -3928,17 +3838,17 @@ Notebook[
                            ""
                           ],
                           Function[
-
+                           
                            CurrentValue[
                             EvaluationCell[],
                             {TaggingRules, "RadioButtonValue"}
-                           ] =
+                           ] = 
                             "Other";
 
                            CurrentValue[
                             EvaluationCell[],
                             {TaggingRules, "SpecifiedLicenseID"}
-                           ] =
+                           ] = 
                             Replace[#1, "" -> Null];
                           ]
                          ],
@@ -4544,7 +4454,7 @@ Notebook[
              "CheckboxData" -> "OEM6eJxVj10KwkAMhFH8aUW8gl6ghyhVUVAU4wXWdrSL2+6yyT709m4VRJ+SkMmXmTzJaEzSGdDkFMQFyWha1CifqO4DHh00Cy13+lHDr45KajRKdKnMqrBNVMfBthGxFzTMaR7EvgUZJWdvHbx0NCuU4GG9Bkf4yfUnfB9+4H29BANONpUWdYvdeKsM47tI1zD43fQOrQlN+/9wsW8F3nl8TFGatx2FGyNGml/ANvgS187FpGdVRuQL1GJYGg=="
             },
             CellTags -> {"Categories", "Categories-Checkboxes", "CheckboxCell"},
-            CellID -> 601619996
+            CellID -> 442290368
            ]
           },
           Open
@@ -4797,7 +4707,10 @@ Notebook[
              ButtonBox[
               "GitHub - WolframResearch/PacletCICD: Continuous integration and deployment for Wolfram Language Paclets",
               BaseStyle -> "Hyperlink",
-              ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None},
+              ButtonData -> {
+               URL["https://github.com/WolframResearch/PacletCICD"],
+               None
+              },
               ButtonNote -> "https://github.com/WolframResearch/PacletCICD"
              ]
             ],
@@ -5115,7 +5028,7 @@ Notebook[
                 "CompatibilityOperatingSystem",
                 "CompatibilityOperatingSystem-Checkboxes"
                },
-               CellID -> 73871594
+               CellID -> 291462836
               ]
              },
              Closed
@@ -5299,7 +5212,7 @@ Notebook[
                 "CompatibilityFeatures",
                 "CompatibilityFeatures-Checkboxes"
                },
-               CellID -> 131471071
+               CellID -> 442031351
               ]
              },
              Closed
@@ -5587,7 +5500,7 @@ Notebook[
                 "CompatibilityEvaluationEnvironment",
                 "CompatibilityEvaluationEnvironment-Checkboxes"
                },
-               CellID -> 18566116
+               CellID -> 327061819
               ]
              },
              Closed
@@ -5709,7 +5622,7 @@ Notebook[
                 "CompatibilityCloudSupport",
                 "CompatibilityCloudSupport-Checkboxes"
                },
-               CellID -> 491919250
+               CellID -> 410059881
               ]
              },
              Closed
@@ -5884,7 +5797,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-LocalFiles"
             },
-            CellID -> 101451102
+            CellID -> 858133057
            ],
            Cell[
             BoxData[
@@ -5972,7 +5885,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-WolframAccount"
             },
-            CellID -> 142584921
+            CellID -> 579271579
            ],
            Cell[
             BoxData[
@@ -6060,7 +5973,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-ExternalServices"
             },
-            CellID -> 209159071
+            CellID -> 176304304
            ],
            Cell[
             BoxData[
@@ -6148,7 +6061,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-WLSystemConfiguration"
             },
-            CellID -> 452257480
+            CellID -> 270920241
            ],
            Cell[
             BoxData[
@@ -6236,7 +6149,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-WLSystemSymbols"
             },
-            CellID -> 157478833
+            CellID -> 159278315
            ],
            Cell[
             BoxData[
@@ -6324,7 +6237,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-OSConfiguration"
             },
-            CellID -> 378021560
+            CellID -> 324580644
            ],
            Cell[
             BoxData[
@@ -6412,7 +6325,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-LocalSystemInteractions"
             },
-            CellID -> 15085221
+            CellID -> 207469275
            ],
            Cell[
             BoxData[
@@ -6500,7 +6413,7 @@ Notebook[
              "Disclosures-Checkboxes",
              "Disclosures-Other"
             },
-            CellID -> 238299320
+            CellID -> 347949929
            ]
           },
           Open
@@ -6649,26 +6562,21 @@ Notebook[
   "ResourceCreateNotebook" -> True,
   "ResourceType" -> "Paclet",
   "RuntimeConfiguration" -> {
-   "Contexts" -> {"PacletResource`", "PacletResource`DefinitionNotebook`"},
-   "DefaultContentMethod" -> "Tagged",
-   "HintPods" -> True,
    "LoadingMethod" -> "Paclet",
-   "PacletName" -> "PacletResource"
+   "PacletName" -> "PacletResource",
+   "Contexts" -> {"PacletResource`", "PacletResource`DefinitionNotebook`"},
+   "DefaultContentMethod" -> "Tagged"
   },
   "SubmissionReviewData" -> {"Review" -> False},
   "ToolsOpen" -> False,
-  "UpdatedTimestamp" -> 3.869*^9,
-  "TemplateVersion" -> "1.5.68",
+  "UpdatedTimestamp" -> 3.8696*^9,
+  "TemplateVersion" -> "1.5.62",
   "StatusMessage" -> "",
-  "AutoUpdate" -> True,
-  "PacletBuildData" -> {
-   "FileHashes" -> ByteArray["OEM6eJxz5NMN1nbJTy7NTc0rSSzJzM/Td81Lz8ksztB3L81MSS3WD07MLchJBXP08pIcmXSD2YLzS4uSU31SF8clarS6WANFQhKL0lNLfBZ7pO9k3NIorRusht1Mz7yU1Ar94tR0kFRxvCGSccUsfvl5qQizGFhlmR5O/JOrG6xBjFl66al5eEzrjHt4tnr2U0XdYDPspgWlpqUWpeYlpwYkpoN8XZmblJ9TrO+YkuKfh+7xyyKLeCfO+pOCMN5C0slfkWuqBxnGh5Tnoxn/3tD1wZbFteoI49+oBAdWVy6pxhlXwQWpOTkkBK53/IoMzd1R/rrBukQbSHQI4zAypLQkvygzEeTrosySjNzUksxkNJ97TJ6kuGDrw1CEqQm9u9PXC54P1A0W8E4tykvNgcVIeQ6yxvygvUJ2RXc9ERoRIkgaQWGNqnHuq536/P5vkdIwQkQMqhGSAwISk3NSS9C0F7nmsV9dbxSE0I4QYffxdHb1C3ZFVj/xsBJv2rIuJ4R6hAgvxAbPvDR0R07baDXj7MfuCoQuhIggRJdvYl5mWmoxmvvQ4yg/r/KPzfTgRAB/cXJb"],
-   "LastBuiltArchive" -> "H:\\Documents\\PacletCICD\\PacletCICD-Examples\\PacletCICD-Examples-Sample\\build\\SamplePublisher__SamplePaclet-1.4.0.paclet"
-  }
+  "PacletBuildData" -> {"FileHashes" -> {}}
  },
  CreateCellID -> True,
  DynamicEvaluationTimeout -> 60,
- FrontEndVersion -> "13.2 for Microsoft Windows (64-bit) (August 6, 2022)",
+ FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
  StyleDefinitions ->
   Notebook[
    {
@@ -7725,13 +7633,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7741,14 +7649,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       2790153672590285854;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Template Input";
                          DefinitionNotebookClient`TemplateInput[]
@@ -7852,13 +7760,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7868,14 +7776,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       4138174468017918531;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Literal Input";
                          DefinitionNotebookClient`LiteralInput[]
@@ -7979,13 +7887,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -7995,17 +7903,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       1887802176716758884;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
-
-                         DefinitionNotebookClient`$ClickedButton =
+                         
+                         DefinitionNotebookClient`$ClickedButton = 
                           "Insert Delimiter";
 
                          DefinitionNotebookClient`DelimiterInsert[]
@@ -8116,13 +8024,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                     
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8132,8 +8040,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-
-                      DefinitionNotebookClient`$ButtonCodeID =
+                      
+                      DefinitionNotebookClient`$ButtonCodeID = 
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8225,13 +8133,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8241,18 +8149,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       5800166344906378520;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Insert table with two columns";
 
                          DefinitionNotebookClient`TableInsert[2]
@@ -8272,13 +8180,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8292,11 +8200,11 @@ Notebook[
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Insert table with three columns";
 
                          DefinitionNotebookClient`TableInsert[3]
@@ -8316,13 +8224,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8332,18 +8240,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       4413051590217973467;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Add a row to the selected table";
 
                          DefinitionNotebookClient`TableRowInsert[]
@@ -8363,13 +8271,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8379,18 +8287,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       9150037060110806081;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Sort the selected table";
 
                          DefinitionNotebookClient`TableSort[]
@@ -8410,13 +8318,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8426,18 +8334,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       2347719643166780208;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Tables";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Merge selected tables";
 
                          DefinitionNotebookClient`TableMerge[]
@@ -8477,13 +8385,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                     
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8493,8 +8401,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-
-                      DefinitionNotebookClient`$ButtonCodeID =
+                      
+                      DefinitionNotebookClient`$ButtonCodeID = 
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8586,13 +8494,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8602,18 +8510,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       2572781756330727330;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Insert comment for reviewer";
 
                          DefinitionNotebookClient`CommentInsert[]
@@ -8633,13 +8541,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8649,18 +8557,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       3646530685697756512;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Mark/unmark selected cells as comments";
 
                          DefinitionNotebookClient`CommentToggle[]
@@ -8680,13 +8588,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8696,18 +8604,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       1866935765212102190;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Cells";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Mark/unmark selected cells as excluded";
 
                          DefinitionNotebookClient`ExclusionToggle[]
@@ -8747,13 +8655,13 @@ Notebook[
                    Block[
                     {
                      $ContextPath = RSNB`$cp$,
-                     ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                     ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                       False,
                      DefinitionNotebookClient`$ButtonCodeID = None
                     },
                     Internal`WithLocalSettings[
                      DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                     
                      Once[
                       ReleaseHold[
                        CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8763,8 +8671,8 @@ Notebook[
 
                      Needs["DefinitionNotebookClient`"],
                      Annotation[
-
-                      DefinitionNotebookClient`$ButtonCodeID =
+                      
+                      DefinitionNotebookClient`$ButtonCodeID = 
                        3216557251994556740;
 
                       DefinitionNotebookClient`CheckForUpdates[
@@ -8856,13 +8764,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8872,17 +8780,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       1266981032716546660;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
-
-                         DefinitionNotebookClient`$ClickedButton =
+                         
+                         DefinitionNotebookClient`$ClickedButton = 
                           "DocumentationTools";
 
                          DefinitionNotebookClient`$ClickedAction = "Open Palette";
@@ -8905,13 +8813,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8921,21 +8829,21 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       7312678540702684447;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
-
-                         DefinitionNotebookClient`$ClickedButton =
+                         
+                         DefinitionNotebookClient`$ClickedButton = 
                           "DocumentationTools";
 
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "New Function Page";
 
                          PacletResource`DefinitionNotebook`NewFunctionPage[
@@ -8957,13 +8865,13 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -8973,17 +8881,17 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       8084030535806498779;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
-
-                         DefinitionNotebookClient`$ClickedButton =
+                         
+                         DefinitionNotebookClient`$ClickedButton = 
                           "DocumentationTools";
 
                          DefinitionNotebookClient`$ClickedAction = "New Guide Page";
@@ -9678,12 +9586,12 @@ Notebook[
                ],
                Function[
                 Annotation[
-
-                 DefinitionNotebookClient`$ButtonCodeID =
+                 
+                 DefinitionNotebookClient`$ButtonCodeID = 
                   5906117565281445171;
 
                  (
-                 DefinitionNotebookClient`$ClickedButton =
+                 DefinitionNotebookClient`$ClickedButton = 
                   "Style Guidelines";
 
                  DefinitionNotebookClient`ViewStyleGuidelines[
@@ -9756,8 +9664,8 @@ Notebook[
                ],
                Function[
                 Annotation[
-
-                 DefinitionNotebookClient`$ButtonCodeID =
+                 
+                 DefinitionNotebookClient`$ButtonCodeID = 
                   5074018684552945401;
 
                  (DefinitionNotebookClient`$ClickedButton = "Tools";
@@ -9801,7 +9709,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID =
+                  DefinitionNotebookClient`$ButtonCodeID = 
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -9818,18 +9726,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9839,18 +9747,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       4301941258590251066;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Definition Notebook";
 
                          PacletResource`DefinitionNotebook`CheckPacletNotebook[
@@ -9862,8 +9770,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[4301941258590251066]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9877,18 +9785,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9898,14 +9806,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       1312802444570235546;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "Paclet Files";
@@ -9918,8 +9826,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[1312802444570235546]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9933,18 +9841,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -9954,14 +9862,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       6325522174070009817;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "Documentation";
@@ -9974,8 +9882,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[6325522174070009817]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -9990,18 +9898,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10011,14 +9919,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       8900916902137752067;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Check";
                          DefinitionNotebookClient`$ClickedAction = "All";
@@ -10031,8 +9939,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[8900916902137752067]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10057,7 +9965,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID =
+                  DefinitionNotebookClient`$ButtonCodeID = 
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -10074,18 +9982,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10095,14 +10003,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       1579518736508902704;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Build";
                          DefinitionNotebookClient`$ClickedAction = "Documentation";
@@ -10115,8 +10023,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[1579518736508902704]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10130,18 +10038,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10151,14 +10059,14 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       5625167833203047250;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Build";
                          DefinitionNotebookClient`$ClickedAction = "All";
@@ -10171,8 +10079,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[5625167833203047250]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10197,7 +10105,7 @@ Notebook[
                 ],
                 Function[
                  Annotation[
-                  DefinitionNotebookClient`$ButtonCodeID =
+                  DefinitionNotebookClient`$ButtonCodeID = 
                    1898445052439169298;,
                   DefinitionNotebookClient`ButtonCodeID[1898445052439169298]
                  ]
@@ -10214,18 +10122,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10235,18 +10143,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       8714502586816766511;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Locally on this computer";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10261,8 +10169,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[8714502586816766511]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10276,18 +10184,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10297,18 +10205,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       5593410685219912767;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "Publicly in the cloud";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10323,8 +10231,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[5593410685219912767]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10338,18 +10246,18 @@ Notebook[
                   Block[
                    {
                     $ContextPath = RSNB`$cp$,
-                    ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                    ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                      False,
                     DefinitionNotebookClient`$SuppressDynamicEvents = True,
                     DefinitionNotebookClient`$ButtonCodeID = None
                    },
                    Internal`WithLocalSettings[
                     DefinitionNotebookClient`$ButtonsDisabled = True;
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      ProgressIndicator[Appearance -> "Necklace"];
 
-
+                    
                     Once[
                      ReleaseHold[
                       CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -10359,18 +10267,18 @@ Notebook[
 
                     Needs["DefinitionNotebookClient`"],
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       2850084946728613817;
 
                      DefinitionNotebookClient`CheckForUpdates[
                       RSNB`nb$,
                       ReleaseHold[
-                       DefinitionNotebookClient`$ButtonCode =
+                       DefinitionNotebookClient`$ButtonCode = 
                         HoldForm[
                          DefinitionNotebookClient`$ClickedButton = "Deploy";
-
-                         DefinitionNotebookClient`$ClickedAction =
+                         
+                         DefinitionNotebookClient`$ClickedAction = 
                           "In this session only";
 
                          DefinitionNotebookClient`DisplayStripe[
@@ -10385,8 +10293,8 @@ Notebook[
                      ],
                      DefinitionNotebookClient`ButtonCodeID[2850084946728613817]
                     ],
-
-                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+                    
+                    CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
                      "";
 
                     DefinitionNotebookClient`$ButtonsDisabled = False;
@@ -10413,7 +10321,7 @@ Notebook[
                  (CurrentValue[
                   EvaluationNotebook[],
                   {TaggingRules, "StatusMessage"}
-                 ] =
+                 ] = 
                   "")
                ],
                "Text",
@@ -10522,8 +10430,8 @@ Notebook[
                    ],
                    Function[
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       3196298050911436087;
 
                      (DefinitionNotebookClient`$ClickedButton = "SubmitUpdate";
@@ -10635,8 +10543,8 @@ Notebook[
                    ],
                    Function[
                     Annotation[
-
-                     DefinitionNotebookClient`$ButtonCodeID =
+                     
+                     DefinitionNotebookClient`$ButtonCodeID = 
                       3704832848557640569;
 
                      (DefinitionNotebookClient`$ClickedButton = "Submit";
@@ -11246,7 +11154,7 @@ Notebook[
                 ImageSize -> {Automatic, 35}
                }
               ],
-              "Wolfram Paclet Repository Reviewer"
+              "Wolfram Function Repository Reviewer"
              },
              "PrettyTooltipTemplate"
             ]
@@ -11263,62 +11171,6 @@ Notebook[
      }
     ],
     Cell[
-     StyleData["CommentReplyIcon"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          Thickness[0.076923],
-          FaceForm[{#1, Opacity[1.0]}],
-          FilledCurveBox[
-           {{{0, 2, 0}, {0, 1, 0}}},
-           {{{1.5, 7.5}, {6.5, 11.5}, {6.5, 3.5}}}
-          ],
-          FilledCurveBox[
-           {
-            {
-             {1, 4, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJw9U2tIVEEUvq5iVkttZmdfuo/ZbQukJGKVqPBLUTGJ0h9hVLIJRYhUVJj2\nAjGRWCKiF0llZWRCSEnZExEJ06CotaiQyH7EIrthT3u6NXPn3jswnDlzzzlz\nvu8711u9vWJzsqIoSXwv5tuk6IsgrQvOnLf+1CRC5ZKbg3WJAIJV90rNJoJF\nXOR6sebI6W3pyXq8DxccIoGwa+uxj/v/McxNbTxZOJ3w4Rkb+ZVgWGk2ZbcQ\nYfm0V+07Jhm6St7vzVhI2JfBT78ZCkI8cj2hqe/xxaIJJm0PoWEssCgtzvCc\nlzlYYwXP5iUYHpXlHV4xasXLeh4wyKCWX2fDqcJwbfQ+w4F83vGQDT1fJ1/U\ndzJ842bsih1XB3hiI0NzrPyOq9mBPb1tjpyNDBXci5U7MVQnLhji4nMsE+9W\nc6ARL3i3XSWbXNiiLi8EzPxbbqydsaD73LgHJ2wp/OiFoKVJ8Ui+Chha6M3T\nH8NZUMPm+XB9p8h0QtATjvtxqUh0SBgV76QHZN+lszReA5pNQ66o1+8HV6O3\nrdWCBIcTuKHxHJ4NQdO1sx4Nxxy4VYBug2dVt4lMnB/vGCi7TSgWz/504Etk\nVbXlNSGkCmWHqFYbJXziYXlT7VKXEdLq2DDMwyvvksTZZ5W4OgiCjmCVFTUP\ndh+3HSKJ8y9hqUogIfqn83PkCUndQoTLQsZ2gpperL3fQJLXIMEn5F5GaD3D\nl50g2O3OIkhiCUf7v8/fMJOMuRPTmT2FjLlU+0ghY471+dV93epzr/sPPaJz\nu3Ev65sNX/8//gP5Ei2u\n          "
-           ]
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImageSize -> {13.0, 13.0},
-         PlotRange -> {{0.0, 13.0}, {0.0, 13.0}}
-        ]
-       ])
-     }
-    ],
-    Cell[
      StyleData["CommentCellLabelTemplate"],
      TemplateBoxOptions -> {
       DisplayFunction ->
@@ -11327,7 +11179,7 @@ Notebook[
          TagBox[
           GridBox[
            {
-            {StyleBox[#1, FontSize -> 11], "\[SpanFromLeft]"},
+            {StyleBox[#1, FontSize -> 11]},
             {
              StyleBox[
               DynamicBox[
@@ -11351,31 +11203,6 @@ Notebook[
                SingleEvaluation -> True
               ],
               FontSize -> 9
-             ],
-             ItemBox[
-              ButtonBox[
-               TagBox[
-                StyleBox[
-                 TemplateBox[
-                  {
-                   "\"Reply \[RightGuillemet]\"",
-                   StyleBox["\"Reply \[RightGuillemet]\"", "HyperlinkActive"],
-                   BaseStyle -> "Hyperlink"
-                  },
-                  "MouseoverTemplate"
-                 ],
-                 FontSize -> 9
-                ],
-                MouseAppearanceTag["LinkHand"]
-               ],
-               BaseStyle -> "Hyperlink",
-               ButtonFunction :>
-                (SelectionMove[ParentCell[EvaluationCell[]], After, Cell];
-                DefinitionNotebookClient`CommentInsert[]),
-               Evaluator -> Automatic,
-               Method -> "Queued"
-              ],
-              Alignment -> Right
              ]
             }
            },
@@ -11419,25 +11246,25 @@ Notebook[
           ],
           ButtonFunction :>
            With[ { RSNB`nb$ = ButtonNotebook[] },
-
+            
             If[ #4,
-             CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+             CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
               ProgressIndicator[Appearance -> "Necklace"]
             ];
 
-
+            
             With[ { RSNB`$cp$ = $ContextPath },
              Quiet[
               Block[
                {
                 $ContextPath = RSNB`$cp$,
-                ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+                ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                  False,
                 DefinitionNotebookClient`$ButtonCodeID = None
                },
                Internal`WithLocalSettings[
                 DefinitionNotebookClient`$ButtonsDisabled = True;
-
+                
                 Once[
                  ReleaseHold[
                   CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -11447,8 +11274,8 @@ Notebook[
 
                 Needs["DefinitionNotebookClient`"],
                 Annotation[
-
-                 DefinitionNotebookClient`$ButtonCodeID =
+                 
+                 DefinitionNotebookClient`$ButtonCodeID = 
                   3145484069433207908;
 
                  DefinitionNotebookClient`CheckForUpdates[
@@ -11465,7 +11292,7 @@ Notebook[
              ]
             ];
 
-            CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] =
+            CurrentValue[RSNB`nb$, {TaggingRules, "StatusMessage"}] = 
              "";
            ],
           FrameMargins -> {{5, 5}, {0, 0}},
@@ -16911,986 +16738,6 @@ Notebook[
      }
     ],
     Cell[
-     StyleData["HintPodTitleBar"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          GrayLevel[0.97],
-          FilledCurveBox[
-           BezierCurve[
-            {
-             Offset[{0, -3}, {1, 1}],
-             Offset[{0, -1.3443}, {1, 1}],
-             Offset[{-1.3443, 0}, {1, 1}],
-             Offset[{-3, 0}, {1, 1}],
-             Offset[{-3, 0}, {1, 1}],
-             Offset[{3, 0}, {-1, 1}],
-             Offset[{3, 0}, {-1, 1}],
-             Offset[{1.3443, 0}, {-1, 1}],
-             Offset[{0, -1.3443}, {-1, 1}],
-             Offset[{0, -3}, {-1, 1}],
-             Offset[{0, -3}, {-1, 1}],
-             {-1, -1},
-             {-1, -1},
-             {-1, -1},
-             {1, -1},
-             {1, -1}
-            }
-           ]
-          ],
-          InsetBox[
-           FormBox[
-            StyleBox[
-             "\"Notebook Analysis\"",
-             FontColor -> GrayLevel[0.4],
-             FontColor -> GrayLevel[0.4],
-             FontFamily -> "Source Sans Pro",
-             FontWeight -> Plain,
-             FontSize -> 13,
-             StripOnInput -> False
-            ],
-            TraditionalForm
-           ],
-           Offset[{8, 0}, {-1, 0}],
-           NCache[ImageScaled[{0, 1/2}], ImageScaled[{0, 0.5}]]
-          ],
-          TagBox[
-           TagBox[
-            TooltipBox[
-             {
-              GrayLevel[0.6],
-              DiskBox[Offset[{-13, -10}, {1, 1}], Offset[6]],
-              GrayLevel[0.97],
-              AbsoluteThickness[1.5],
-              CapForm["Round"],
-              LineBox[
-               {
-                {Offset[{-15, -8}, {1, 1}], Offset[{-11, -12}, {1, 1}]},
-                {Offset[{-15, -12}, {1, 1}], Offset[{-11, -8}, {1, 1}]}
-               }
-              ]
-             },
-             FrameBox[
-              StyleBox[
-               "\"Close analysis pod\"",
-               "Text",
-               FontColor -> RGBColor[0.53725, 0.53725, 0.53725],
-               FontSize -> 12,
-               FontWeight -> "Plain",
-               FontTracking -> "Plain",
-               StripOnInput -> False
-              ],
-              Background -> RGBColor[0.96078, 0.96078, 0.96078],
-              FrameStyle -> RGBColor[0.89804, 0.89804, 0.89804],
-              FrameMargins -> 8,
-              StripOnInput -> False
-             ],
-             TooltipDelay -> 0.1,
-             TooltipStyle -> {Background -> None, CellFrame -> 0}
-            ],
-            Annotation[#1, "Close analysis pod", "Tooltip"] &
-           ],
-           EventHandlerTag[
-            {
-             "MouseClicked" :> NotebookDelete[EvaluationCell[]],
-             Method -> "Preemptive",
-             PassEventsDown -> Automatic,
-             PassEventsUp -> True
-            }
-           ]
-          ]
-         },
-         AspectRatio -> Full,
-         ImageSize -> {Full, 20},
-         PlotRange -> {{-1, 1}, {-1, 1}},
-         ImageMargins -> {{0, 0}, {0, 0}},
-         ImagePadding -> {{0, 0}, {0, 0}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodDelimiterTop"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          AbsoluteThickness[1],
-          GrayLevel[0.85],
-          CapForm["Round"],
-          LineBox[{{-1, 0}, {1, 0}}]
-         },
-         AspectRatio -> Full,
-         PlotRange -> {{-1, 1}, {-1, 1}},
-         ImagePadding -> {{0, 0}, {0, 0}},
-         ImageSize -> {Full, 2},
-         BaselinePosition -> Scaled[0.1],
-         ImageMargins -> {{0, 0}, {4, 0}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodDelimiterBottom"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          AbsoluteThickness[1],
-          GrayLevel[0.85],
-          CapForm["Round"],
-          LineBox[{{-1, 0}, {1, 0}}]
-         },
-         AspectRatio -> Full,
-         PlotRange -> {{-1, 1}, {-1, 1}},
-         ImagePadding -> {{0, 0}, {0, 0}},
-         ImageSize -> {Full, 2},
-         BaselinePosition -> Scaled[0.1],
-         ImageMargins -> {{0, 0}, {0, 4}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodFooter"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          GrayLevel[0.97],
-          FilledCurveBox[
-           BezierCurve[
-            {
-             {-1, 1},
-             {-1, 1},
-             Offset[{0, 3}, {-1, -1}],
-             Offset[{0, 3}, {-1, -1}],
-             Offset[{0, 1.3443}, {-1, -1}],
-             Offset[{1.3443, 0}, {-1, -1}],
-             Offset[{3, 0}, {-1, -1}],
-             Offset[{3, 0}, {-1, -1}],
-             Offset[{-3, 0}, {1, -1}],
-             Offset[{-3, 0}, {1, -1}],
-             Offset[{-1.3443, 0}, {1, -1}],
-             Offset[{0, 1.3443}, {1, -1}],
-             Offset[{0, 3}, {1, -1}],
-             Offset[{0, 3}, {1, -1}],
-             {1, 1},
-             {1, 1}
-            }
-           ]
-          ],
-          InsetBox[
-           BoxData[
-            FormBox[
-             TemplateBox[
-              {
-               StyleBox[
-                TemplateBox[{3}, "Spacer1"],
-                FontColor -> GrayLevel[0.4],
-                FontFamily -> "Source Sans Pro",
-                FontWeight -> Plain,
-                FontSize -> 12,
-                StripOnInput -> False
-               ],
-               StyleBox[
-                #1,
-                FontColor -> GrayLevel[0.4],
-                FontFamily -> "Source Sans Pro",
-                FontWeight -> Plain,
-                FontSize -> 12,
-                StripOnInput -> False
-               ],
-               StyleBox[
-                TemplateBox[{5}, "Spacer1"],
-                FontColor -> GrayLevel[0.4],
-                FontFamily -> "Source Sans Pro",
-                FontWeight -> Plain,
-                FontSize -> 12,
-                StripOnInput -> False
-               ]
-              },
-              "RowDefault"
-             ],
-             TraditionalForm
-            ]
-           ],
-           Offset[{5, 2.5}, {-1, 0}],
-           {-1, 0}
-          ]
-         },
-         AspectRatio -> Full,
-         ImageSize -> {Full, 21},
-         PlotRange -> {{-1, 1}, {-1, 1}},
-         ImageMargins -> {{0, 0}, {0, 3}},
-         ImagePadding -> {{0, 0}, {0, 0}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodMenuItems"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        TemplateBox[
-         {
-          #1,
-          FrameMargins -> 3,
-          Background -> GrayLevel[1],
-          RoundingRadius -> 0,
-          FrameStyle ->
-           Directive[
-            AbsoluteThickness[1],
-            RGBColor[0.75686, 0.82745, 0.88235]
-           ],
-          ImageMargins -> #2
-         },
-         "Highlighted"
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodActionMenuItem"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        ButtonBox[
-         TemplateBox[
-          {
-           TagBox[
-            GridBox[
-             {{#1, TemplateBox[{7}, "Spacer1"], #2}},
-             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}},
-             AutoDelete -> False,
-             GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-             GridBoxSpacings -> {"Columns" -> {{0}}}
-            ],
-            "Grid"
-           ],
-           FrameStyle -> None,
-           RoundingRadius -> 0,
-           FrameMargins -> {{5, 2}, {2, 2}},
-           ImageSize -> Full,
-           ImageMargins -> {{0, 0}, {0, 0}},
-           Background ->
-            Dynamic[
-             If[ CurrentValue["MouseOver"],
-              GrayLevel[0.96],
-              GrayLevel[1.0]
-             ]
-            ]
-          },
-          "Highlighted"
-         ],
-         ButtonFunction :> ReleaseHold[#3],
-         Appearance -> {
-          "Default" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ],
-          "Hover" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ],
-          "Pressed" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ]
-         },
-         Method -> "Queued",
-         Evaluator -> Automatic
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodDisabledMenuItem"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        ButtonBox[
-         TemplateBox[
-          {
-           TagBox[
-            GridBox[
-             {
-              {
-               #1,
-               TemplateBox[{7}, "Spacer1"],
-               StyleBox[#2, FontOpacity -> 0.4]
-              }
-             },
-             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}},
-             AutoDelete -> False,
-             GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-             GridBoxSpacings -> {"Columns" -> {{0}}}
-            ],
-            "Grid"
-           ],
-           FrameStyle -> None,
-           RoundingRadius -> 0,
-           FrameMargins -> {{5, 2}, {2, 2}},
-           ImageSize -> Full,
-           ImageMargins -> {{0, 0}, {0, 0}},
-           Background -> GrayLevel[1.0]
-          },
-          "Highlighted"
-         ],
-         ButtonFunction :> Null,
-         Appearance -> {
-          "Default" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ],
-          "Hover" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ],
-          "Pressed" ->
-           Image[
-            CompressedData[
-             "1:eJxTTMoPSmNiYGAo5gESfqW5qUWZyY5FRYmVScxAARhmAeL/QAClwDQDBPxHFg8WALJC84oz0/NSUzzzSlLTU4ssAL+sIf8="
-            ],
-            "Byte",
-            ColorSpace -> "RGB",
-            ImageResolution -> {72, 72},
-            Interleaving -> True
-           ]
-         },
-         Method -> "Queued",
-         Evaluator -> Automatic,
-         Enabled -> False
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodActionLabel"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        PaneBox[
-         StyleBox[
-          #1,
-          FontColor -> GrayLevel[0.2],
-          FontFamily -> "Source Sans Pro",
-          FontWeight -> Plain,
-          FontSize -> 13,
-          LineIndent -> 0,
-          StripOnInput -> False
-         ],
-         FrameMargins -> 0,
-         ImageMargins -> 0,
-         BaselinePosition -> Baseline,
-         ImageSize -> Full
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodMenuDelimiter"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        PaneBox[
-         StyleBox[
-          GraphicsBox[
-           {
-            CapForm["Round"],
-            GrayLevel[0.9],
-            AbsoluteThickness[1],
-            LineBox[{{-1, 0}, {1, 0}}]
-           },
-           AspectRatio -> Full,
-           PlotRange -> {{-1, 1}, {-1, 1}},
-           ImageMargins -> {{0, 0}, {2, 2}},
-           ImagePadding -> {{5, 5}, {0, 0}},
-           ImageSize -> {Full, 2}
-          ],
-          LineIndent -> 0,
-          StripOnInput -> False
-         ],
-         FrameMargins -> 0,
-         ImageMargins -> 0,
-         BaselinePosition -> Baseline,
-         ImageSize -> Full
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconChevron"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          GrayLevel[0.2],
-          AbsoluteThickness[1.8],
-          CapForm["Round"],
-          JoinForm["Miter"],
-          LineBox[{{-0.5, 1}, {0.5, 0}, {-0.5, -1}}]
-         },
-         AspectRatio -> Full,
-         BaselinePosition -> Bottom,
-         ImageMargins -> {{0, 4}, {0, 0}},
-         ImageSize -> {5.6, 7.7}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconPopOut"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          FaceForm[GrayLevel[0.4]],
-          FilledCurveBox[
-           {
-            {
-             {1, 4, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGIlIGYC4h1yra8Dd6g4rHN/WCWip+KwRiYqxXq+isNk\nCZYwvlwEDROHqYPpKwUrUHFgAIEDKg5nzwDBG2VU/hlluPogMEMCzm9kOdpv\naC6OJi/mINR84NRCVwQfIq8M519wufHhi5Yymn4lNPOVHNLAQBHO/6YR03/o\nK5eDB9Ab69wFHJoeHZ+xexqng8r0/xPqfvM5cG9dVnl8JacD0FO6m+byOPxL\n/f4kUZHbQZr3ge4EBW6HD2IeAX9m8Dhkzyqfs2gxp8ONxmK3Kd/4HOYsUt75\np50Tbi6YesgF9b8ShJ+oCOfD3Anjw/zx9JP8pXx7hD9h4QfjqxtyAKNCBU0e\nEY4wPqr5iHh4/nvlx0tnVRyYObvkk98pOwA9+X75MRUHWWD03udHxCssngGf\nXO7X\n          "
-           ]
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImageSize -> {14.0, 14.0},
-         PlotRange -> {{0.0, 13.62}, {0.0, 13.62}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconWrench"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          GrayLevel[0.4],
-          AbsoluteThickness[1],
-          Opacity[1.0],
-          JoinedCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGJRIGYCYmWv6mZ9n3/2cmJZvp/5BBzci37yv9wu6/Au\nysnuhaQynG8at8uT55AGXJwBDHQdPl3yTRKIUIfzo1Ks7/vzajiosjVOdfbW\nccjaUzJZokUFrv8ySLmlqoPbts9/r1iowsVh6mD6zp4BAh4NnPbA3AHTr+ss\n8/rRNoS7YXyYv2D+7H/ySf5SPrdD7D/nX29ff7H/6hXZZnGNGc6HqYPRMPED\nb+bZ6FxBqAPpOprL7YAefgCtVISU\n          "
-           ],
-           CurveClosed -> {1}
-          ]
-         },
-         AspectRatio -> Automatic,
-         BaselinePosition -> Scaled[0.2],
-         ImagePadding -> 0.5,
-         ImageSize -> {16.0, 16.0},
-         PlotRange -> {{0.0, 16.0}, {0.0, 16.0}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconInfo"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          FaceForm[GrayLevel[0.4]],
-          FilledCurveBox[
-           {
-            {{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}},
-            {
-             {1, 4, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            },
-            {
-             {1, 4, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3}
-            }
-           },
-           {
-            {
-             {6.81, 13.0},
-             {3.3914, 13.0},
-             {0.62, 10.229},
-             {0.62, 6.81},
-             {0.62, 3.3914},
-             {3.3914, 0.62},
-             {6.81, 0.62},
-             {10.229, 0.62},
-             {13.0, 3.3914},
-             {13.0, 6.81},
-             {13.0, 10.229},
-             {10.229, 13.0},
-             {6.81, 13.0}
-            },
-            CompressedData[
-             "\n1:eJxTTMoPSmViYGCQB2IQbct1fXGBrbRD6+vAHXKtvA7r3B9WiayTdoCI8zgc\n/qoR039IHkoLOjCAgYKDB0iZu4CDPFijgsOsmSDAC1UnCzWPE0rLQMXZHV6x\nmAia1Ug56E1Y8MMwjdXh685bXX9VJRx4Jq9sCvRkcTh7BgREHfoPgTSwOAQB\ndb8OFHYAO4eLFeo+IQcRMIMLzoe4h9dBW2LqFc4MYYd4zdMCx38JOviYdzom\npIo4PJgjuHSvo6jDkgKQz0QdCsEelHDQjAHZJAa1VxIqLwH3Jzofok8S4i9W\nRQews67LQsJhnoKDMRjIQ9Q3wMJJwQFMJULDSRJmrhzUPKh6Blmof+QcwM6K\nkXb4Bgq2rzJQcXFovMhA5UUdciqqluo0SztsKMqY+NZG2OHV1E08hTrSDquA\noTmXQdABPX4BaWq/EA==\n           "
-            ],
-            {
-             {8.81, 9.79},
-             {8.8101, 9.5122},
-             {8.5878, 9.2854},
-             {8.31, 9.28},
-             {7.51, 9.28},
-             {7.2283, 9.28},
-             {7.0, 9.5083},
-             {7.0, 9.79},
-             {7.0, 10.62},
-             {7.0054, 10.898},
-             {7.2322, 11.12},
-             {7.51, 11.12},
-             {8.35, 11.12},
-             {8.6239, 11.115},
-             {8.8447, 10.894},
-             {8.85, 10.62}
-            }
-           }
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImagePadding -> 0.5,
-         ImageSize -> {14.0, 14.0},
-         PlotRange -> {{0.0, 13.62}, {0.0, 13.62}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconNone"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         { },
-         AspectRatio -> Automatic,
-         ImageSize -> {16.0, 16.0},
-         PlotRange -> {{0.0, 16.0}, {0.0, 16.0}},
-         BaselinePosition -> Scaled[0.2],
-         ImagePadding -> 0.5
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconIgnoreAlways"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          EdgeForm[None],
-          FaceForm[GrayLevel[0.4]],
-          FilledCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGJTIGYCYpF17g+rROQcbLmuLy6wlXaoBguoOvQf+qoR\nw6/i8CZwh1zralWH4oyJb2vsVRx0N819v/yYqoO0/l0VtkYEv/U1UOFRBP/D\n8mPe5pyqcP0z8oSaD3ipws2H0famcbs8fVQd2BqnOnevUXUAa+dWdUgSiLDc\nckLVwQPounXHVeB8kK1TmxH8gN7peULOKnD9EP+owM2H+QvmzyUFIBEeuHxC\nmb+c2CtuuP75NjpXZj3jgpsP0s11nRPO5+feuqzyOAec73dxYsy/w+xw/WDr\nuNjh5n9MPhPr7cEG93+V2Wq78Nus8PCB8WHhB+PDwhemHxb+MPNh8ZMGBhJw\nf8Lkv2nEAJXwOGyu/rQh4DWrwwrTs9Z+F7kdvHiYtNunsTrYgrwpy+XQteHh\ny6lGbA6HxNWCWRdzOJwKObhiyTk2B3fmCm4VDXaouRwOEaeMjmzUY4OHhybI\neA02eHgt/GH4bJ0qm4PT+bSrz4Hh+Z0tfobPVDZ4eIOVx7DD3QlzNwMYIPx1\nsmzffCl9FUg4u7M5hPEBU1S+isPs0Pmr195gdTAGgc0qUHewOswDJhfv7yoO\n/g7CiYcvszoAU9vrQAtVh6V+QAFnNqg9iHj5dMk3SWAGIt78wBGJiFcYH+ZP\nGB/mT5h+WLqBmQ/zJwC4F0s3\n          "
-           ]
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImageMargins -> {{0, 0}, {0, 2}},
-         ImageSize -> {14.0, 14.0},
-         PlotRange -> {{-0.5, 13.62}, {-0.5, 13.62}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconIgnoreInCell"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          EdgeForm[None],
-          FaceForm[GrayLevel[0.4]],
-          FilledCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0}
-            },
-            {{0, 2, 0}, {0, 1, 0}}
-           },
-           {
-            {
-             {11.69, 13.37},
-             {7.57, 13.37},
-             {7.57, 12.37},
-             {7.76, 12.37},
-             {11.19, 8.93},
-             {11.19, 1.25},
-             {7.57, 1.25},
-             {7.57, 0.25},
-             {12.19, 0.25},
-             {12.19, 13.37}
-            },
-            {{9.17, 12.37}, {11.17, 12.37}, {11.17, 10.37}}
-           }
-          ],
-          FilledCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGIjIGYCYo+HVSLr3EUdbLmuLy6wlXZYUgBiyTlAxJUc\nkt9FOdllyDuU6yrKf1mD4LM879F466sMV28MApuVHX7yv9y+3lkOQj9WdngU\nIb794gFZh/Dojfvf/FN22CHX+jrQAsHvf/JJ/tJ6GTgfbI+ODFz/2TMgIA03\nvxroqodVQg5gSkQO6m4mVPubGR1E7I/d2fpE2cHy2tFckwYGB2n9uypsjCoO\nYG89/GcP4wd5zm1QO/QHzr9wNeyN/u5f9jD9kHD4aQ8zX+z36XcnD3+3v8fE\n2SXfrOygvqBzw8OX3+yDQAxHBB/srr9KcL7mW959BjuV4PrnCi7de7BcCW4+\nLLwhND88PmDyEHcLOjg2PTo+Y/d3+/21shbpLYIOTglPLyjd/mZ//wH35JVM\nCD4knATgfL0JC34YPuOH688Nq1237REf3HzNmP5DXzX4HLhVNOp6dv6yP3xZ\nO1UyiRcePrlH/22q/sQDD79vGiANPA5yy1946NUzOOy61fU39TuPw5GNenmL\nGxkdwPal8cLjB2Y+LP7SwEDCgQEMZODyf7+VPpgTKOOw9ldM7tE6XgfmCqCL\n9sk43PfvnZ4nxAuJZ2NZB5j9UV933uraK+swf/XaG/HfeCDudZJzuA1yTgov\nPH3CzBcAJg/mdHmHVElQyuSH851lXj8ykxKEq4eFNwCKHGBr\n          "
-           ]
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImageMargins -> {{0, 0}, {0, 2}},
-         ImageSize -> {14.0, 14.0},
-         PlotRange -> {{-0.5, 13.62}, {-0.5, 13.62}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconIgnoreInNotebook"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          FaceForm[GrayLevel[0.4]],
-          FilledCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGJTIGYC4qAdcq2vAwUcbLmuLy6wFXdYUgBiSTp4PKwS\nWeeu4GCgtVL4AouUw1zBpXsPlis4vDlgqexlLeWg+ZZ3n8FOBB+s/y+CH6S+\noHODoyJc/z0mzi75ZkW4+cYgsFnRoanYbco3N0kHEftjd7Y+UXRYeM3kvcVR\nCYeQx0tnH2FQgroLwb9pWxmxYqs4nP9zQfrmV8bicP0g1VzXxeDmf9OI6T/0\nlcsB6Bmgj6QcGMDggz1MvoTnRNz7f2/sf/K/3L7+saLDzmCriP/PX9iHR2/c\n/+YfzL1P4Pz+Xoc96+IfwPkrVqZm1068AdcPtAxo4yW4+ccenln/jOGkPcz/\nMjWJRqEGh+xh4QPjw8IPxoeFL0w/LPxh5sPiB0KzwuNPHhibO+Su2h8GKTvE\n7aAYeYAl7+5Z+/rfVgXnOLgdPu6qO5h345j9voPiasGsXHA+JJw44Hy9CQt+\nGD5jh+vPDatdt+0RG9x8TZByDTYH/uky5V7st+21JaZe4cxgdZgp5PnFqOuh\nvQY/99ZlP1kcIO54CjWfxeFeX0HUh0Uv7bdEft15i4vVoa2/Q3Oiy1t77Xax\nm+fKWeHxAzMfFn9pYCACj1+YfMeX29cbgfF/+LJ2qmQSKzx95B79t6n6Ews8\n/cDsB3O5JB1Upv+fUPebxeHIRr28xQeB6e+Cy40PX1gdnjTPO7uKX8qh/8kn\n+Uv57A4sYXy6m2KlHDjBCY3DwV9OLMvXGJjeda7MejaXC56eYeENAPSkchE=\n\n          "
-           ]
-          ],
-          FilledCurveBox[
-           {
-            {
-             {0, 2, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           CompressedData[
-            "\n1:eJxTTMoPSmVmYGBgBGJdIGYC4qAdcq2vL6o52HJdX1ywVwtC24rB+YdTViWE\nXBKE86tF1rk/rOJxMAaBzxpwPkReDY2vCDVPCMpXhvPB+jerwfnPf6/8eOms\nukPDdoemR+wiUHkNuHtgfJh7YXy2xqnO3W/U0eQ14ObB+DD7YHzNmP5DXzWY\n4PzY3KP/NlX/toeZBxYP/GIPsw/GBzuHSxrOX7TF/MchFSkH9g9iHgF/Ptmb\nvrdwdTeSdNjZywYU+WQPcb8E1B+f7H8EP146m0XcYeE1E6DKT/Z9IGUXRB02\nV3/aEJD92R5s7A4Rh1kzQeCr/YQFPwyfvRN2+Put9MEcwe/2894vP+ZtLuxw\n3793ep7QT3uIOiEHkC651t/2YH8a80LtY3NA5TPB+RPrflsVnPtkL/8lJ6xW\nT8jhTSDYo1DzxOB8BjBQh/O/aQADzlQTTV4bbh6MD7MPxoeFfwDI2czaDmfP\ngAA0nCdqOTglPL2gdFvDweNhlci645oO8iAPzdOEmPNXw+EPMDp9k7Qc4nZ5\n8jC9VncAG39KywE9/QIAH6UuJw==\n          "
-           ]
-          ],
-          FilledCurveBox[
-           {{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}}},
-           {
-            {
-             {5.63, 11.05},
-             {5.63, 10.44},
-             {6.0569, 10.539},
-             {6.5048, 10.49},
-             {6.9, 10.3},
-             {9.53, 10.3},
-             {9.53, 11.05}
-            }
-           }
-          ],
-          FilledCurveBox[
-           {{{1, 4, 3}, {0, 1, 0}, {0, 1, 0}}},
-           {
-            {
-             {7.92, 3.73},
-             {8.0396, 3.4994},
-             {8.0784, 3.2353},
-             {8.03, 2.98},
-             {9.41, 2.98},
-             {9.41, 3.73}
-            }
-           }
-          ],
-          FilledCurveBox[
-           {{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}},
-           {
-            {
-             {6.73, 6.21},
-             {6.2, 5.82},
-             {6.67, 5.46},
-             {11.22, 5.46},
-             {11.22, 6.21},
-             {6.73, 6.21}
-            }
-           }
-          ],
-          FilledCurveBox[
-           {{{1, 4, 3}, {0, 1, 0}, {0, 1, 0}}},
-           {
-            {
-             {8.0, 8.7},
-             {8.0514, 8.4458},
-             {8.0162, 8.1818},
-             {7.9, 7.95},
-             {10.25, 7.95},
-             {10.25, 8.7}
-            }
-           }
-          ]
-         },
-         AspectRatio -> Automatic,
-         ImagePadding -> 0.75,
-         ImageSize -> {15.0, 15.0},
-         PlotRange -> {{0.0, 13.62}, {0.0, 13.62}}
-        ]
-       ])
-     }
-    ],
-    Cell[
-     StyleData["HintPodIconHint"],
-     TemplateBoxOptions -> {
-      DisplayFunction ->
-       (Function[
-        GraphicsBox[
-         {
-          EdgeForm[None],
-          FaceForm[#1],
-          FilledCurveBox[
-           {
-            {{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}},
-            {
-             {1, 4, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            },
-            {
-             {0, 2, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {0, 1, 0},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3},
-             {1, 3, 3}
-            }
-           },
-           {
-            {
-             {9.015, 17.37},
-             {4.4559, 17.37},
-             {0.76, 13.645},
-             {0.76, 9.05},
-             {0.76, 4.455},
-             {4.4559, 0.73},
-             {9.015, 0.73},
-             {13.574, 0.73},
-             {17.27, 4.455},
-             {17.27, 9.05},
-             {17.27, 13.645},
-             {13.574, 17.37},
-             {9.015, 17.37}
-            },
-            CompressedData[
-             "\n1:eJxTTMoPSmViYGCQBGIQbcixRiYqRcVh3bak+pu23A5rf8XkHt2n7OC/fkpq\nx2MOB8+5DWqHnik5nP8e/HjpbHYHj4dVIuvYlRyAiisjVrA78Bau6b6toegQ\nApQ9soDdQepAtIJjoILDJ8fzaVefczgs6Nzw8GWoPNx84yMb9fIeyzr831T9\nacMFXod1N+LL/OVkHV5uX8/8/IyAw7Fck4btDrIOZQ/mCC7dK+TAXMGtomEn\n6/DP+dfb1w0iDkIi9sfufJV1ePRy6iYeQzGHac7dOc+t5R3SwEDcwe7FzTW/\nbBQc9kybwF+1TcLh7TwbnStSig7Hd+3oZSuQdDjab1iuy6jk0MIL8qGkg8f+\nWlmL50oO9uHRG/fnSDr4fu4LLjmi7HDw1ELXbZslHGDhAzO//9BXjRh+VQeG\niXW/rQzEHKzv+/dOz1N1uFfY1fekSMRhzhGFDUUZqhB/LhaCmFOs6sC0h1VI\nZL+Ag8g6d2AIqjqYCJrZ7L3E64Ae/gDrrapT\n           "
-            ],
-            CompressedData[
-             "\n1:eJxTTMoPSmViYGBQBGIQ/emSb5KAhJoDAwg0aDhYbjlRtu++isNudX7urWpK\nDrX2pnG7Tqo4TFPsKy2sVnRQvv2zLqtGBULfUXAI6J2eJ8Ss4mDSsN2hKUnB\nIa0jOfZOmrKD/l0Vtsar8g5Gz9apPlms5GDgs4zLLVXeweLHoZRVDxQdnNdm\n3ivskneQW/7CQ09e0aHEbco3tnh5h+jLex6LxCo4FErzPtC9IO+wVfT36Xed\n8nDzH5tJHYheIOeQBxJ4pOCgu2nu++Vscg75Qs0HTjUqOjDkN7IcPS/rcObd\nycNOukoObqqlTLM4ZOD+O7JRL2/xQWkHHibtdrFITYeb8WX+ctOkHQ6eWui6\nzVjLQfD4rh29bdIO/Ye+asTwazuAnJswRdohaIdc6+uL2g6qbI1TnbtlHGy5\nri8uqNVxEIgAhtg3WYj5B3QcgKEkzcsAdOfS2UcUDHQdEp5eULotqehw89z3\n4Mepug63pGsSjUyVHMr3zZfSj9V1uKKdKvkoQtmhOGPi25p6XQeQ8p91KhB9\nlroOIGH7UlWH+qw9JZNn6EDs54bGF4OOA9AVtlzhag6KG4oyJupqO4CCYaGr\nmgM4XiO0HK5WvFQz9FBzuAzi7tR0cNv2+e8VCzUHJ5AF0poO6PEPAFdvzZk=\n\n           "
-            ]
-           }
-          ]
-         },
-         AspectRatio -> Automatic,
-         BaselinePosition -> Scaled[0.1],
-         ImagePadding -> 0.5,
-         ImageSize -> {14.0, 14.778},
-         PlotRange -> {{0.76, 17.27}, {0.73, 17.37}}
-        ]
-       ])
-     }
-    ],
-    Cell[
      StyleData[
       "FileManagerFile",
       StyleDefinitions -> StyleData["Text"]
@@ -18086,7 +16933,7 @@ Notebook[
       "ReturnKeyDown" :>
        With[ { RSNB`nb$ = Notebooks[EvaluationCell[]] },
         SelectionMove[EvaluationCell[], After, Cell];
-
+        
         NotebookWrite[
          RSNB`nb$,
          Cell[
@@ -18351,7 +17198,6 @@ Notebook[
      ],
      ShowStringCharacters -> False,
      FontSlant -> "Italic",
-     PrivateFontOptions -> {"OperatorSubstitution" -> False},
      FontColor -> GrayLevel[0.5]
     ],
     Cell[
@@ -18380,13 +17226,13 @@ Notebook[
              Block[
               {
                $ContextPath = RSNB`$cp$,
-               ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+               ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                 False,
                DefinitionNotebookClient`$ButtonCodeID = None
               },
               Internal`WithLocalSettings[
                DefinitionNotebookClient`$ButtonsDisabled = True;
-
+               
                Once[
                 ReleaseHold[
                  CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -18396,14 +17242,14 @@ Notebook[
 
                Needs["DefinitionNotebookClient`"],
                Annotation[
-
-                DefinitionNotebookClient`$ButtonCodeID =
+                
+                DefinitionNotebookClient`$ButtonCodeID = 
                  1053094956087266899;
 
                 DefinitionNotebookClient`CheckForUpdates[
                  RSNB`nb$,
                  ReleaseHold[
-                  DefinitionNotebookClient`$ButtonCode =
+                  DefinitionNotebookClient`$ButtonCode = 
                    HoldForm[
                     If[ $VersionNumber >= 13.0,
                      DefinitionNotebookClient`LocalFileInputDialog[
@@ -18459,13 +17305,13 @@ Notebook[
              Block[
               {
                $ContextPath = RSNB`$cp$,
-               ResourceSystemClient`$AsyncronousResourceInformationUpdates =
+               ResourceSystemClient`$AsyncronousResourceInformationUpdates = 
                 False,
                DefinitionNotebookClient`$ButtonCodeID = None
               },
               Internal`WithLocalSettings[
                DefinitionNotebookClient`$ButtonsDisabled = True;
-
+               
                Once[
                 ReleaseHold[
                  CurrentValue[RSNB`nb$, {TaggingRules, "CompatibilityTest"}]
@@ -18475,14 +17321,14 @@ Notebook[
 
                Needs["DefinitionNotebookClient`"],
                Annotation[
-
-                DefinitionNotebookClient`$ButtonCodeID =
+                
+                DefinitionNotebookClient`$ButtonCodeID = 
                  4898876371082581810;
 
                 DefinitionNotebookClient`CheckForUpdates[
                  RSNB`nb$,
                  ReleaseHold[
-                  DefinitionNotebookClient`$ButtonCode =
+                  DefinitionNotebookClient`$ButtonCode = 
                    HoldForm[
                     If[ $VersionNumber >= 13.0,
                      DefinitionNotebookClient`LocalFileInputDialog[
@@ -18517,15 +17363,6 @@ Notebook[
      }
     ],
     Cell[StyleData["Item"], DefaultNewCellStyle -> "Item"],
-    Cell[
-     StyleData[
-      "RelatedSymbol",
-      StyleDefinitions -> StyleData["Item"]
-     ],
-     DefaultNewCellStyle -> {"RelatedSymbol", FontFamily -> "Source Sans Pro"},
-     DefaultFormatType -> DefaultInputFormatType,
-     FormatType -> InputForm
-    ],
     Cell[
      StyleData["ButtonText"],
      FontFamily -> "Sans Serif",
@@ -18594,7 +17431,7 @@ Notebook[
     ]
    },
    Visible -> False,
-   FrontEndVersion -> "13.2 for Microsoft Windows (64-bit) (August 6, 2022)",
+   FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
    StyleDefinitions -> "PrivateStylesheetFormatting.nb"
   ],
  ExpressionUUID -> "199a7046-afe0-4c40-98c7-227b7440cbe9"

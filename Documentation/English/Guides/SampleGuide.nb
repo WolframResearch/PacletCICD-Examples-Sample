@@ -1,3 +1,11 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* Created By: SaveReadableNotebook *)
+(* https://resources.wolframcloud.com/FunctionRepository/resources/SaveReadableNotebook *)
+
 Notebook[
  {
   Cell[
@@ -231,7 +239,10 @@ Notebook[
        ButtonBox[
         "https://github.com/WolframResearch/PacletCICD",
         BaseStyle -> "Hyperlink",
-        ButtonData -> {URL["https://github.com/WolframResearch/PacletCICD"], None}
+        ButtonData -> {
+         URL["https://github.com/WolframResearch/PacletCICD"],
+         None
+        }
        ]
       ],
       "GuideRelatedLinks",
@@ -248,19 +259,21 @@ Notebook[
   "Author" -> "rhennigan",
   "CreationDate" -> "04-08-2022 11:39:02",
   "NotebookIndexQ" -> True,
-  "NotebookLastIndexed" -> DateObject[
-   {2022, 4, 8, 12, 45, 31.6775813`9.253326918806678},
-   "Instant",
-   "Gregorian",
-   -4.
-  ],
+  "NotebookLastIndexed" ->
+   DateObject[
+    {2022, 4, 8, 12, 45, 31.678},
+    "Instant",
+    "Gregorian",
+    -4.0
+   ],
   "NotebookUUID" -> "466e6f27-4930-4efa-8001-80080d608140"
  },
  FrontEndVersion -> "13.0 for Microsoft Windows (64-bit) (January 26, 2022)",
- StyleDefinitions -> FrontEnd`FileName[
-  {"Wolfram"},
-  "GuidePageStylesExt.nb",
-  CharacterEncoding -> "UTF-8"
- ],
+ StyleDefinitions ->
+  FrontEnd`FileName[
+   {"Wolfram"},
+   "GuidePageStylesExt.nb",
+   CharacterEncoding -> "UTF-8"
+  ],
  ExpressionUUID -> "466e6f27-4930-4efa-8001-80080d608140"
 ]

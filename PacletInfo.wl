@@ -2,7 +2,7 @@ PacletObject[ <|
     "Name"             -> "SamplePublisher/SamplePaclet",
     "Description"      -> "A complete sample Paclet",
     "Creator"          -> "Sample Author",
-    "Version"          -> "1.4.0",
+    "Version"          -> "1.6.0",
     "WolframVersion"   -> "13.0+",
     "License"          -> "MIT",
     "PublisherID"      -> "SamplePublisher",

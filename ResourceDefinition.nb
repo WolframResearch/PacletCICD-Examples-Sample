@@ -42,7 +42,6 @@ Notebook[
          "PacletDirectoryChooser",
          TaggingRules -> {
           "PacletDirectoryType" -> "Notebook",
-          "PacletDirectory" -> "H:\\Documents\\PacletCICD\\PacletCICD-Examples\\PacletCICD-Examples-Sample",
           "Refreshing" -> False
          },
          CellTags -> "PacletManifestPanel",
@@ -252,7 +251,7 @@ Notebook[
                   CellID -> 455451445
                  ]
                 },
-                Closed
+                Open
                ]
               ],
               Cell[

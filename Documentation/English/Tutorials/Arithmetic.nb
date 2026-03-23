@@ -1,3 +1,11 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* Created By: SaveReadableNotebook *)
+(* https://resources.wolframcloud.com/FunctionRepository/resources/SaveReadableNotebook *)
+
 Notebook[
  {
   Cell[
@@ -109,15 +117,16 @@ Notebook[
          BoxData[RowBox[{RowBox[{"$Line", "=", "0"}], ";"}]],
          "Input",
          "FutureExample",
-         CellDingbat -> Cell[
-          BoxData[
-           TooltipBox[
-            Cell["rhennigan      ", "TentativeID"],
-            "2022-04-08"
-           ]
+         CellDingbat ->
+          Cell[
+           BoxData[
+            TooltipBox[
+             Cell["rhennigan      ", "TentativeID"],
+             "2022-04-08"
+            ]
+           ],
+           "TentativeWrapper"
           ],
-          "TentativeWrapper"
-         ],
          CellLabel -> "In[6]:=",
          CellID -> 301997458
         ],
@@ -691,19 +700,21 @@ Notebook[
  TaggingRules -> {
   "InformationPopupMenuItemAdded" -> True,
   "NotebookIndexQ" -> True,
-  "NotebookLastIndexed" -> DateObject[
-   {2022, 4, 8, 12, 45, 31.9168217`9.256594542082341},
-   "Instant",
-   "Gregorian",
-   -4.
-  ],
+  "NotebookLastIndexed" ->
+   DateObject[
+    {2022, 4, 8, 12, 45, 31.917},
+    "Instant",
+    "Gregorian",
+    -4.0
+   ],
   "NotebookUUID" -> "4e691753-3ac5-44c6-aa24-ac9453b87583"
  },
  FrontEndVersion -> "13.0 for Microsoft Windows (64-bit) (January 26, 2022)",
- StyleDefinitions -> FrontEnd`FileName[
-  {"Wolfram"},
-  "TechNotePageStylesExt.nb",
-  CharacterEncoding -> "UTF-8"
- ],
+ StyleDefinitions ->
+  FrontEnd`FileName[
+   {"Wolfram"},
+   "TechNotePageStylesExt.nb",
+   CharacterEncoding -> "UTF-8"
+  ],
  ExpressionUUID -> "4e691753-3ac5-44c6-aa24-ac9453b87583"
 ]

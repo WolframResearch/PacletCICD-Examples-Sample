@@ -1,0 +1,1 @@
+LLMTool[{"Identity", "Returns the input parameters"}, {"input" -> "String"}, Identity]
